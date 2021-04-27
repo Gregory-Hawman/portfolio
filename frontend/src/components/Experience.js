@@ -1,5 +1,7 @@
 import React from 'react';
 import { Element } from 'react-scroll'
+import '../css/exp.css'
+
 import javascriptIcon from '../images/javascript.svg'
 import reactIcon from '../images/react.svg'
 import reduxIcon from '../images/redux.svg'

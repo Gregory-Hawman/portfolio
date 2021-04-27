@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    border-bottom: .5px solid rgb(121, 121, 121);
+    justify-content: space-between;
+    box-shadow: 0px .5px 5px .5px #888888;
+    padding: 1rem 1rem;
+
+    width: 100%;
+    min-height: 6vh;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #eee;
+    transition: all .7s ease-in;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+// ANIMATED INSTEAD OF FIXED NAVBAR SCROLL 
+// .scrolled {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+// }
+
+.nav {
+    display: flex;
+    border: 1px solid red;
+    margin: 0 1rem;
+
+    div {
+        padding: 0 1rem;
+    }
+
+}
+
+.links {
+    margin: 0 0 0 5rem;
+}

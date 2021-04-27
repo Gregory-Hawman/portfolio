@@ -5,6 +5,8 @@ import Navbar from './components/Navbar'
 import Bio from './components/Bio'
 import Experience from './components/Experience';
 import Work from './components/Work';
+import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <Bio />
       <Experience />
       <Work />
+      <Testimonials />
+      <Contact />
       <Footer />
     </div>
   );
