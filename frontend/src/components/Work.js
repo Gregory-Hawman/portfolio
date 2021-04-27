@@ -21,9 +21,9 @@ function Work () {
                 <div>
                     <h1>Work Experience</h1>
                     <div>
-                        {Projects.map((project) => {
+                        {Projects.map((project, index) => {
                             return (
-                                <div>{project.name}</div>
+                                <div key={index}>{project.name}</div>
                             )
                         })}
                     </div>
