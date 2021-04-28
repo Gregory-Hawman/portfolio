@@ -21,16 +21,22 @@ function Experience () {
         { name: 'CSS3', icon: cssIcon },
     ]
 
+    console.log(skills[1].icon)
+
     return (
         <div>
             <Element id='exp-section' name='exp-section'>
                 <h1>I have experience with:</h1>
-                <div>
+                <div className='exp-container'>
                     {skills.map((skill, index) => {
                         return (
-                            <div key={index}>
-                                <img src={skills.icon} alt={skills.name} />
-                                <p>{skill.name}</p>
+                            <div key={index} className='exp-div'>
+                                <div className='exp-logo'>
+                                    <img src={skills[index].icon} alt={skills.name} />
+                                </div>
+                                <div className='exp-content'>
+                                    <p>{skill.name}</p>
+                                </div> 
                             </div>
                         )
                     })}

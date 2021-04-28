@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import * as Scroll from 'react-scroll';
 import myLogo from '../images/Logo.png'
+import github from '../images/github.svg'
+import linkedin from '../images/linkedin.svg'
 
 import '../css/navbar.css';
 
@@ -31,7 +33,7 @@ function Navbar () {
     return (
         <div className={navbarClasses.join(' ')}>
             <div className='nav img logo'>
-                <img scr={myLogo} alt='my-logo'/>   
+                <img src={myLogo} alt='my-logo' />   
             </div>
             
             <div className='nav links'>
@@ -102,9 +104,13 @@ function Navbar () {
                 </div>
             </div>
 
-            <div className='nav social-links'>
-                <div>GitHub</div>
-                <div>LinkedIn</div>
+            <div className='social-links'>
+                <a href='https://github.com/Gregory-Hawman' target='_blank' rel='noreferrer'>
+                    <img src={github} alt='Github Link'/>
+                </a>
+                <a href='https://www.linkedin.com/in/gregory-hawman/' target='_blank' rel='noreferrer'>
+                    <img src={linkedin} alt='LinkedIn Link' />
+                </a>
             </div>
         </div>
     )

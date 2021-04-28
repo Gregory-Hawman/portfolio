@@ -1,5 +1,30 @@
 #exp-section {
-  margin: 0 0 20rem;
+  margin: 0 auto 20rem;
+  border: 1px solid black;
+  width: 75%;
+}
+
+.exp-logo {
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+}
+
+.exp-div {
+  width: 25%;
+  margin: 0 auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.exp-content {
+  border: 1px solid red;
+}
+
+.exp-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=exp.css.map */

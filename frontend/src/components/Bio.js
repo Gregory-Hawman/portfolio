@@ -10,7 +10,7 @@ function Bio () {
             <Element id='bio-section' name='bio-section'>
                 <div className='profile'>
                     <div className='profile-img'>
-                        <img alt='profile image' src={profile}/>
+                        <img alt='profile' src={profile}/>
                     </div>
                     <div className='profile-content'>
                         <h1>Hello, I am Gregory </h1>
