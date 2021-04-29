@@ -20,11 +20,11 @@ function Work () {
         <div>
             <Element id='work-section' name='work-section'>
                 <div>
-                    <h1>Work Experience</h1>
-                    <div>
+                    <h1>Work</h1>
+                    <div className='work-container'>
                         {Projects.map((project, index) => {
                             return (
-                                <div key={index}>{project.name}</div>
+                                <div key={index} className='works'>{project.name}</div>
                             )
                         })}
                     </div>

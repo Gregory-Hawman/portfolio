@@ -21,8 +21,6 @@ function Experience () {
         { name: 'CSS3', icon: cssIcon },
     ]
 
-    console.log(skills[1].icon)
-
     return (
         <div>
             <Element id='exp-section' name='exp-section'>
@@ -32,7 +30,7 @@ function Experience () {
                         return (
                             <div key={index} className='exp-div'>
                                 <div className='exp-logo'>
-                                    <img src={skills[index].icon} alt={skills.name} />
+                                    <img src={skill.icon} alt={skill.name} />
                                 </div>
                                 <div className='exp-content'>
                                     <p>{skill.name}</p>

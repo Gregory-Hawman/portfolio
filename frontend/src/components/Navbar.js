@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import * as Scroll from 'react-scroll';
 import myLogo from '../images/Logo.png'
 import github from '../images/github.svg'
@@ -10,7 +10,7 @@ function Navbar () {
     const Link = Scroll.Link
 
     // ANIMATED INSTEAD OF FIXED NAVBAR SCROLL
-    const [scrolled, setScrolled] = useState(false)
+    const [scrolled] = useState(false)
 
     // const handleScroll = () => {
     //     const offset=window.scrollY;
@@ -42,7 +42,7 @@ function Navbar () {
                     to="bio-section"
                     spy={true}
                     smooth={true}
-                    offset={-75}
+                    offset={-150}
                     duration={500}
                     className='bio-section'
                     activeClass='active-bio'
@@ -50,25 +50,25 @@ function Navbar () {
                     About
                     </Link>
                 </div>
-                <div>
+                {/* <div>
                     <Link
                     to="exp-section"
                     spy={true}
                     smooth={true}
-                    offset={-75}
+                    offset={-150}
                     duration={500}
                     className='exp-section'
                     activeClass='active-exp'
                     >
                         Experience
                     </Link>
-                </div>
+                </div> */}
                 <div>
                     <Link
                     to="work-section"
                     spy={true}
                     smooth={true}
-                    offset={-75}
+                    offset={-150}
                     duration={500}
                     className='work-section'
                     activeClass='active-work'
@@ -81,7 +81,7 @@ function Navbar () {
                     to="test-section"
                     spy={true}
                     smooth={true}
-                    offset={-75}
+                    offset={-150}
                     duration={500}
                     className='test-section'
                     activeClass='active-test'
@@ -94,7 +94,7 @@ function Navbar () {
                     to="contact-section"
                     spy={true}
                     smooth={true}
-                    offset={-75}
+                    offset={-150}
                     duration={500}
                     className='contact-section'
                     activeClass='active-contact'

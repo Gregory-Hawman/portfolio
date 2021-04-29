@@ -1,3 +1,37 @@
 #test-section {
-    margin: 0 0 20rem;
+    margin: 0 auto 20rem;
+    width: 85%;
+}
+
+.tests {
+    display: flex;
+    border: 10px solid blue;
+    justify-content: space-evenly;
+}
+
+.test-card {
+    margin: 1rem;
+    background-color: cadetblue;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.test-img {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    
+    img {
+        border-radius: 50%;
+    }
+}
+
+.test-text {
+    width: 95%;
+    margin: 1rem auto;
+    
+    div {
+        border: 1px solid black
+    }
 }
