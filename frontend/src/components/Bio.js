@@ -14,7 +14,7 @@ function Bio () {
                     </div>
                     <div className='profile-content'>
                         <h1>Hello, I am Gregory </h1>
-                        <p>I am a full stack web developer with a passion for coding well crafted easy to use websites and apps.</p>
+                        <p>I am a full stack web developer with a passion for coding well-crafted easy to use websites and apps.</p>
                     </div>
                 </div>
             </Element>
