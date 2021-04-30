@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import * as Scroll from 'react-scroll';
 import myLogo from '../images/Logo.png'
 import github from '../images/github.svg'
@@ -10,20 +10,20 @@ function Navbar () {
     const Link = Scroll.Link
 
     // ANIMATED INSTEAD OF FIXED NAVBAR SCROLL
-    const [scrolled] = useState(false)
+    const [scrolled, setScrolled] = useState(false)
 
-    // const handleScroll = () => {
-    //     const offset=window.scrollY;
-    //     if(offset > 350 ){
-    //         setScrolled(true);
-    //     } else {
-    //         setScrolled(false);
-    //     }
-    // };
+    const handleScroll = () => {
+        const offset=window.scrollY;
+        if(offset > 940 ){
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', handleScroll)
-    // })
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+    })
 
     let navbarClasses=['navbar'];
         if(scrolled){
@@ -39,30 +39,30 @@ function Navbar () {
             <div className='nav links'>
                 <div>
                     <Link
-                    to="bio-section"
+                    to="intro-section"
                     spy={true}
                     smooth={true}
-                    offset={-150}
+                    offset={0}
                     duration={500}
-                    className='bio-section'
-                    activeClass='active-bio'
+                    className='intro-section'
+                    activeClass='active-intro'
                     >
-                    About
+                    Home
                     </Link>
                 </div>
-                {/* <div>
+                <div>
                     <Link
-                    to="exp-section"
+                    to="about-section"
                     spy={true}
                     smooth={true}
-                    offset={-150}
+                    offset={-250}
                     duration={500}
-                    className='exp-section'
-                    activeClass='active-exp'
+                    className='about-section'
+                    activeClass='active-about'
                     >
-                        Experience
+                        About
                     </Link>
-                </div> */}
+                </div>
                 <div>
                     <Link
                     to="work-section"

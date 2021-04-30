@@ -11,9 +11,6 @@
     align-items: center;
     background-color: #eee;
     transition: all .7s ease-in;
-    position: fixed;
-    top: 0;
-    left: 0;
 
     img {
         width: 50px;
@@ -22,11 +19,11 @@
 }
 
 // ANIMATED INSTEAD OF FIXED NAVBAR SCROLL 
-// .scrolled {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-// }
+.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 .nav {
     display: flex;
