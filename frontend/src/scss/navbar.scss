@@ -6,15 +6,15 @@
     padding: 1rem 1rem;
 
     width: 100%;
-    min-height: 6vh;
+    min-height: 5vh;
     box-sizing: border-box;
     align-items: center;
     background-color: #eee;
     transition: all .7s ease-in;
 
     img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -27,11 +27,17 @@
 
 .nav {
     display: flex;
-    border: 1px solid red;
     margin: 0 1rem;
+    font-size: 20px;
+
+    
 
     div {
         padding: 0 1rem;
+
+        &:hover {
+            color: crimson;
+        }
     }
 }
 
@@ -40,8 +46,8 @@
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .social-links {

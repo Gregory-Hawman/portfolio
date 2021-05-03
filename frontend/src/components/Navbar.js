@@ -33,7 +33,7 @@ function Navbar () {
     return (
         <div className={navbarClasses.join(' ')}>
             <div className='nav img logo'>
-                <img src={myLogo} alt='my-logo' />   
+                {/* <img src={myLogo} alt='my-logo' />    */}
             </div>
             
             <div className='nav links'>
