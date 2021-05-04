@@ -2,14 +2,14 @@ import React from 'react';
 import { Element } from 'react-scroll'
 import '../css/about.css'
 
-import javascriptIcon from '../images/javascript.svg'
-import reactIcon from '../images/react.svg'
-import reduxIcon from '../images/redux.svg'
-import html5Icon from '../images/html5icon.svg'
-import cssIcon from '../images/css3.svg'
-import pythonIcon from '../images/python.svg'
-import nodejsIcon from '../images/Node.js_logo.svg'
-import profile from '../images/profile-img.jpg'
+import javascriptIcon from '../images/logos/javascript.svg'
+import reactIcon from '../images/logos/react.svg'
+import reduxIcon from '../images/logos/redux.svg'
+import html5Icon from '../images/logos/html5icon.svg'
+import cssIcon from '../images/logos/css3.svg'
+import pythonIcon from '../images/logos/python.svg'
+import nodejsIcon from '../images/logos/Node.js_logo.svg'
+import profile from '../images/logos/profile-img.jpg'
 
 function About () {
     const skills = [

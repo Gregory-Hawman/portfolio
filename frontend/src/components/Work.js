@@ -1,71 +1,35 @@
-import React from 'react';
-import { Element } from 'react-scroll'
+import React, { useState } from 'react';
 import '../css/work.css'
-import bgImg from '../images/bridgegood.jpg'
 
-function Work () {
 
-    const Projects = [
-        {
-            name: 'BRIDGEGOOD',
-            tech: 'React | Redux | Node.js', 
-            desc: 'A place I worked once!',
-            img: bgImg,
-            link: 'https://www.bridgegood.dev/'
-        },
-        {
-            name: 'Game of Life', 
-            desc: 'A place I worked once!'},
-        {
-            name: 'Notes Notes Notes', 
-            desc: 'A place I worked once!'},
-        {
-            name: '30 Day Challenge', 
-            desc: 'A place I worked once!'},
-        // {
-        //     name: 'Bubbles', 
-        //     desc: 'A place I worked once!'},
-        // {
-        //     name: 'Project 6', 
-        //     desc: 'A place I worked once!'},
-        // {
-        //     name: 'Project 7', 
-        //     desc: 'A place I worked once!'},
-        // {
-        //     name: 'Project 8', 
-        //     desc: 'A place I worked once!'},
-    ]
+function Projects (props) {
+    const [hover, setHover] = useState()
+
+    const onHover = () => {
+        setHover(true);
+    };
+
+    const onLeave = () => {
+        setHover(false);
+    };
 
     return (
-        <div>
-            <Element id='work-section' name='work-section'>
-                <div>
-                    <h1>Work</h1>
-                    <div className='work-container'>
-                        {Projects.map((project, index) => {
-                            return (
-                                <div key={index} className='works'>
-                                    <img src={project.img}/>
-                                    <div >
-                                        {project.name}
-                                    </div>
-                                    <div className='work-desc'>
-                                        {project.desc}
-                                    </div>
-                                    <div>
-                                        More
-                                    </div>
-                                </div>
-                            )
-                        })}
-                    </div>
+        <div className='works' onMouseEnter={onHover} onMouseLeave={onLeave}>
+            <img src={props.img} alt={props.name}/>
+            { hover ?
+            <div className='work-hover'>
+                <div className='work-name'>
+                    {props.name}
                 </div>
-            </Element>
-
-        </div>
-        
-        
+                <div className='work-tech'>
+                    {props.tech}
+                </div>
+                <div className='work-button'>
+                    More
+                </div>
+            </div> : null }
+        </div> 
     )
 }
 
-export default Work;
+export default Projects;

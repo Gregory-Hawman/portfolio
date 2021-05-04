@@ -25,7 +25,7 @@ function Intro () {
         window.addEventListener('scroll', handleScroll)
     })
 
-    let introClasses=['test'];
+    let introClasses=['intro'];
         if(scrolled){
             introClasses.push('scrolled');
         }
@@ -47,13 +47,14 @@ function Intro () {
                         to="about-section"
                         spy={true}
                         smooth={true}
-                        offset={-150}
+                        offset={-260}
                         duration={500}
                         className='intro-button'
                         >
                             View My Work
                         </Link>
                     </div>
+                    
                 </div>
             </div>
         </Element>
