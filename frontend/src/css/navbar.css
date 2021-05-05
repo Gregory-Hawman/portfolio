@@ -48,6 +48,7 @@
 }
 .nav div:hover {
   color: crimson;
+  cursor: pointer;
 }
 
 .links {

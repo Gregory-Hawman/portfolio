@@ -28,6 +28,7 @@ function Projects (props) {
                     More
                 </div>
             </div> : null }
+            
         </div> 
     )
 }

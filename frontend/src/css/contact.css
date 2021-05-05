@@ -1,32 +1,65 @@
 #contact-section {
-  padding: 0 0 20rem;
+  padding: 10rem 0 15.5rem;
   background-color: #010b39;
+}
+#contact-section h2 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
   color: #fff;
+  margin-bottom: 2rem;
 }
 
 .form {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 60%;
   margin: 0 auto;
 }
 .form div {
-  border: 1px solid black;
   width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-.form div * {
-  border: 1px solid blue;
+.form input {
+  height: 3rem;
 }
-.form div label {
-  width: 25%;
-  justify-content: left;
-  text-align: left;
-  margin-bottom: 1rem;
+.form textarea {
+  height: 10rem;
+}
+
+.contact-button {
+  background-color: #010b39;
+  border: 2px solid crimson;
+  border-radius: 10px;
+  color: crimson;
+  font-size: 20px;
+  margin: 1rem 0 0 36rem;
+  padding: 0.5rem 2rem;
+}
+.contact-button:hover {
   color: #fff;
+  background-color: crimson;
+  cursor: pointer;
+}
+
+#contact-section-success {
+  padding: 8rem 0 10rem;
+  background-color: #010b39;
+}
+#contact-section-success h2 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.contact-success {
+  color: #fff;
+  font-size: 30px;
+  margin: 3rem 0 0;
 }
 
 /*# sourceMappingURL=contact.css.map */

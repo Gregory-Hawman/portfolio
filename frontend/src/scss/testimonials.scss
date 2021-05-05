@@ -1,37 +1,49 @@
 #test-section {
     margin: 10rem auto 10rem;
     width: 85%;
+    height: 100vh;
+
+    h2 {
+        font-size: 40px;
+        text-decoration: underline;
+        text-decoration-thickness: 7.5px;
+        margin-bottom: 2rem;
+    }
 }
 
 .tests {
     display: flex;
-    border: 10px solid blue;
     justify-content: space-evenly;
 }
 
 .test-card {
     margin: 1rem;
-    background-color: cadetblue;
-    border-radius: 10px;
+    background-color: #010b39;
+    border-radius: 30px;
     width: 25%;
 }
 
 .test-img {
-    border: 1px solid black;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     
     img {
-        border-radius: 50px;
+        border-radius: 30px;
+        border: 3px solid white;
     }
 }
 
 .test-text {
     width: 95%;
     margin: 1rem auto;
+    color: #fff;
     
     div {
-        border: 1px solid black
+        margin: 0 1rem 2rem;
+        p {
+            text-align: left; 
+            padding: 0 1rem 1rem;
+        }
     }
 }

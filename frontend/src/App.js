@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import Intro from './components/Intro'
 import About from './components/About';
 import ProjectsList from './components/WorkList';
-import Testimonials from './components/Testimonials';
+import TestimonialsList from './components/TestimonialList';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <About />
       <ProjectsList />
-      <Testimonials />
+      <TestimonialsList />
       <Contact />
       <Footer />
     </div>

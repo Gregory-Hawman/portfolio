@@ -1,6 +1,7 @@
 #about-section {
-  margin: 12rem auto 15rem;
+  margin: 15rem auto 0;
   width: 80%;
+  height: 75vh;
 }
 
 .about-bio {
@@ -15,7 +16,7 @@
   height: 300px;
 }
 .about-bio .about-img img {
-  border-radius: 50px;
+  border-radius: 30px;
 }
 .about-bio .about-bio-text {
   width: 55%;

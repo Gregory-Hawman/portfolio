@@ -6,7 +6,38 @@ import '../css/contact.css'
 function Contact () {
     const [state, handleSubmit] = useForm('mjvjgbqe');
         if (state.succeeded){
-            return <p>Thank you for getting in contact!</p>;
+            return (
+                <Element id='contact-section-success' name='contact-section'>
+                <div className='contact-form'>
+                    <h2>Contact Me</h2>
+                    <form
+                        onSubmit={handleSubmit}
+                        action='https://formspree.io/f/mjvjgbqe'
+                        method='POST'
+                    >
+                        <div className='form'>
+                            <div className='formName'>
+                                <input id='name' type='name' name='name' placeholder='Your Name'/>
+                                <ValidationError prefix='Name' field='name' errors={state.errors}/>
+                            </div>
+                        
+                            <div className='formEmail'>
+                                <input id='email' type='email' name='email' placeholder='Email Address'/>
+                                <ValidationError prefix='Email' field='email' errors={state.errors}/>
+                            </div>
+
+                            <div className='formMessage'>
+                                <textarea id='message' name='message' placeholder='Leave a message!'/>
+                                <ValidationError prefix='Message' field='message' errors={state.errors}/>
+                            </div>
+                        </div>
+     
+                        <button className='contact-button' type='submit' disabled={state.submitting}>Send</button>
+                    </form>
+                    <p className='contact-success'>Thank you for getting in contact!</p>
+                </div>
+            </Element>
+            );
         }
 
     return (
@@ -21,25 +52,22 @@ function Contact () {
                     >
                         <div className='form'>
                             <div className='formName'>
-                                <label>Name: </label>
-                                <input id='name' type='name' name='name'/>
+                                <input id='name' type='name' name='name' placeholder='Your Name'/>
                                 <ValidationError prefix='Name' field='name' errors={state.errors}/>
                             </div>
                         
                             <div className='formEmail'>
-                                <label htmlFor='email'>Email Address: </label>
-                                <input id='email' type='email' name='email'/>
+                                <input id='email' type='email' name='email' placeholder='Email Address'/>
                                 <ValidationError prefix='Email' field='email' errors={state.errors}/>
                             </div>
 
                             <div className='formMessage'>
-                                <label>Message: </label>
-                                <textarea id='message' name='message'/>
+                                <textarea id='message' name='message' placeholder='Leave a message!'/>
                                 <ValidationError prefix='Message' field='message' errors={state.errors}/>
                             </div>
                         </div>
      
-                        <button type='submit' disabled={state.submitting}>Send</button>
+                        <button className='contact-button' type='submit' disabled={state.submitting}>Send</button>
                     </form>
                     
                 </div>
