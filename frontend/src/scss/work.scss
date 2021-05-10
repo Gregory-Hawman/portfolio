@@ -41,6 +41,11 @@
     padding: 5rem 0;
     height: 100%;
     margin: -20rem 0 0;
+    animation: fadeIn .3s;
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: .85;}
+    }
 
     .work-name {
       margin: 1rem 0 0;
@@ -57,6 +62,7 @@
 
 
     .work-button {
+      text-transform: uppercase;
       border: 3px solid crimson;
       color: crimson;
       justify-content: center;
@@ -71,6 +77,7 @@
           color: #fff;
           background-color: crimson;
           cursor: pointer;
+          transition: .3s;
       }
     }
   }

@@ -13,11 +13,13 @@ function ProjectsList () {
                     return (
                         <Projects 
                             key={index}
-                            name={project.name}
-                            tech={project.tech}
-                            desc={project.desc}
+                            detail={project.detail}
                             img={project.img}
                             link={project.link}
+                            modalImg={project.modalImg}
+                            name={project.name}
+                            tag={project.tag}
+                            tech={project.tech}
                         />
                     )
                 })}

@@ -25,68 +25,89 @@ export const skillsData = [
 ]
 
 export const projectData = [
-    {
+    {   
         name: 'BRIDGEGOOD',
-        tech: 'React | Redux | Node.js', 
-        desc: 'A place I worked once!',
+        detail: 'A place I worked once!',
         img: bgImg,
-        link: 'https://www.bridgegood.dev/'
+        link: 'https://www.bridgegood.dev/',
+        modalImg: '',
+        tag: '',
+        tech: 'React | Redux | Node.js', 
     },
     {
-        name: 'Game of Life',
-        tech: 'JavaScript | React',
-        desc: 'A place I worked once!',
+        name: `Conway's Game of Life`,
+        detail: 'A zero-player game, its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. It is Turing complete and can simulate a universal constructor or any other Turing machine.',
         img: golImg,
-        link: 'https://www.bridgegood.dev/'
+        link: 'https://www.bridgegood.dev/',
+        modalImg: '',
+        tag: 'a cellular automaton game',
+        tech: 'JavaScript | React',
     },
     {
-        name: 'Bubbles', 
-        tech: 'React | Redux ',
-        desc: 'A place I worked once!',
+        name: 'Bubbles',
+        detail: 'A place I worked once!',
         img: bblsImg,
-        link: 'https://www.bridgegood.dev/'
+        link: 'https://www.bridgegood.dev/',
+        modalImg: '',
+        tag: '',
+        tech: 'React | Redux ',
     },
     {
         name: 'Sleep Tracker',
-        tech: 'React | Redux | Node.js', 
-        desc: 'A place I worked once!',
+        detail: 'A place I worked once!',
         img: '',
-        link: 'https://www.bridgegood.dev/'
+        link: 'https://www.bridgegood.dev/',
+        modalImg: '',
+        tag: '',
+        tech: 'React | Redux | Node.js',
+        
     },
     {
         name: 'Family Recipes', 
-        tech: 'React | Redux | Node.js',
-        desc: 'A place I worked once!',
+        detail: 'A place I worked once!',
         img: '',
-        link: 'https://www.bridgegood.dev/'
+        link: 'https://www.bridgegood.dev/',
+        modalImg: '',
+        tag: '',
+        tech: 'React | Redux | Node.js',
     },
-    {
+    { 
         name: 'MedCabinet', 
-        tech: 'React | Redux | Node.js',
-        desc: 'A place I worked once!',
+        detail: 'A place I worked once!',
         img: '',
-        link: 'https://www.bridgegood.dev/'
+        link: 'https://www.bridgegood.dev/',
+        modalImg: '',
+        tag: '',
+        tech: 'React | Redux | Node.js',
     },
     // {
+    //     detail: 'A place I worked once!',
+    //     img: '',
+    //     link: 'https://www.bridgegood.dev/',
+    //     modalImg: '',
     //     name: 'Notes Notes Notes',
+    //     tag: '',
     //     tech: 'React | Node.js',
-    //     desc: 'A place I worked once!',
-    //     img: '',
-    //     link: 'https://www.bridgegood.dev/'
     // },
     // {
+    //     detail: 'A place I worked once!',
+    //     img: '',
+    //     link: 'https://www.bridgegood.dev/',
+    //     modalImg: '',
     //     name: '30 Day Challenge',
+    //     tag: '',
     //     tech: 'React | Node.js', 
-    //     desc: 'A place I worked once!',
-    //     img: '',
-    //     link: 'https://www.bridgegood.dev/'
     // },
     // {
-    //     name: 'My Resume',
-    //     tech: 'PDF', 
-    //     desc: 'All the places I've worked',
+        
+        
+    //     detail: 'All the places I worked',
     //     img: '',
-    //     link: ''
+    //     link: '',
+    //     modalImg: '',
+    //     name: 'My Resume',
+    //     tag: '',
+    //     tech: 'PDF', 
     // },
 ]
 
@@ -107,60 +128,3 @@ export const testData = [
         text: `Gregory isn't just a great student but also an inspiring person. His exceptional work flow, skills and comprehension of change requests made working with him a dream. Gregory is organized and has no problem to work hard when necessary. His leadership and organizational skills have been invaluable to the group. Gregory makes the impossible possible. He is a great person to work with and is a great addition to any organization.`
     },
 ]
-
-export const modalText = {
-    bridgegood: {
-        title: '',
-        tag: '',
-        detail: '',
-        link: '',
-    },
-    gameOfLife: {
-        title: '',
-        tag: '',
-        detail: '',
-        link: '',
-    },
-    bubbles: {
-        title: '',
-        tag: '',
-        detail: '',
-        link: '',
-    },
-    sleepTracker: {
-        title: '',
-        tag: '',
-        detail: '',
-        link: '',
-    },
-    familyRecips: {
-        title: '',
-        tag: '',
-        detail: '',
-        link: '',
-    },
-    medCabinet: {
-        title: '',
-        tag: '',
-        detail: '',
-        link: '',
-    },
-    notesNotesNotes: {
-        title: '',
-        tag: '',
-        detail: '',
-        link: '',
-    },
-    thirtyDayChallenge: {
-        title: '',
-        tag: '',
-        detail: '',
-        link: '',
-    },
-    resume: {
-        title: '',
-        tag: '',
-        detail: '',
-        link: '',
-    },
-}

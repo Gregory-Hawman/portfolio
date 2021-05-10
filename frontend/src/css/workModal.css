@@ -1,0 +1,38 @@
+.work-modal .modal-img {
+  border-bottom: 3px solid grey;
+}
+.work-modal .modal-text {
+  margin: 0.5rem 2rem 2rem;
+}
+.work-modal h2 {
+  text-transform: uppercase;
+  color: slategray;
+  font-size: 20px;
+  margin: 0 0 1rem;
+}
+.work-modal p {
+  border-top: 1px solid slategray;
+  padding: 1rem 0;
+}
+.work-modal .modal-button {
+  text-transform: uppercase;
+  border: 2px solid crimson;
+  color: white;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  width: 15%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: crimson;
+}
+.work-modal .modal-button:hover {
+  color: crimson;
+  background-color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=workModal.css.map */

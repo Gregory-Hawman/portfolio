@@ -2,24 +2,22 @@ import React, { useState, useImperativeHandle, forwardRef, useCallback, useEffec
 import { createPortal } from 'react-dom';
 import '../css/modal.css'
 
-const modalElement = document.getElementById('modal-root');
+const modalElement = document.getElementById('modal-root') //add 'modal-root to the public html file'
 
 export function Modal({ children, fade = false, defaultOpened = false }, ref) {
     const [isOpen, setIsOpen] = useState(defaultOpened);
 
-    const close = useCallback(() => {
-        setIsOpen(false)
-    }, [])
+    const close = useCallback(() => setIsOpen(false), [])
 
-    useImperativeHandle(ref, () => ({
-        open: () => setIsOpen(true),
-        close
-    }), [close])
+    useImperativeHandle(ref,() => ({
+            open: () => setIsOpen(true),
+            close
+        }), [close])
 
     const handleEscape = useCallback(event => {
-        if (event.keyCode === 27) setIsOpen(false)
-    }, []);
-    
+        if (event.keyCode === 27) close()
+    }, [close])
+
     useEffect(() => {
         if (isOpen) document.addEventListener('keydown', handleEscape, false)
         return () => {
@@ -30,15 +28,18 @@ export function Modal({ children, fade = false, defaultOpened = false }, ref) {
     return createPortal(
         isOpen ? (
             <div className={`modal ${fade ? 'modal-fade' : ''}`}>
-                <div className="modal-overlay" onClick={close} />
-                <span role="button" className="modal-close" aria-label="close" onClick={close}>
-                x
-                </span>
-                <div className="modal-body">{children}</div>
+              <div className="modal-overlay" onClick={close} />
+              <div className="modal-body">
+                {children}
+                <div role="button" className="modal-close" aria-label="close">
+                    <p  onClick={close}>x</p>
+                </div>
+              </div>
+              
             </div>
-        ) : null,
-        modalElement
+          ) : null,
+          modalElement
     )
-};
+}
 
 export default forwardRef(Modal);
