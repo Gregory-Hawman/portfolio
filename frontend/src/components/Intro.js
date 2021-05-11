@@ -53,8 +53,7 @@ function Intro () {
                         >
                             View My Work
                         </Link>
-                    </div>
-                    
+                    </div> 
                 </div>
             </div>
         </Element>
