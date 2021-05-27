@@ -17,7 +17,9 @@ function About () {
                             I am a full-stack web developer with a passion for coding well-crafted easy to use websites and apps.
                         </h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Hello, welcome to my portfolio. I help people make dreams a reality with clean and easy to use UI that runs at blisteringly fast speeds.
+                            <br/>
+                            I studied at DePaul University in Chicago where I got a degree in Digital Media and Communications, and honed an artistic eye for detail. At Lambda School they gave me the skills to turn those artistic ideas into reality with code. 
                         </p>
                     </div>
                 </div>

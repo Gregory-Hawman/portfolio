@@ -7,7 +7,6 @@
 }
 #intro-section .particle-div {
   background-color: #010b39;
-  height: 100vh;
   z-index: 1;
 }
 #intro-section .particle-div .tsparticles-canvas-el {
@@ -19,7 +18,7 @@
   justify-content: space-evenly;
 }
 #intro-section .intro .intro-content {
-  margin: -25rem 1rem 12rem;
+  margin: -30rem 1rem 12rem;
 }
 #intro-section .intro .intro-content div {
   display: flex;

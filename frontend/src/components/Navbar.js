@@ -3,18 +3,21 @@ import * as Scroll from 'react-scroll';
 // import myLogo from '../images/Logo.png'
 import github from '../images/logos/github.svg'
 import linkedin from '../images/logos/linkedin.svg'
+import useWindowDimensions from '../hooks/useWindowDemensions';
 
 import '../css/navbar.css';
 
 function Navbar () {
     const Link = Scroll.Link
+    const { height, width } = useWindowDimensions();
+    console.log('height', height, 'width', width)
 
     // ANIMATED INSTEAD OF FIXED NAVBAR SCROLL
     const [scrolled, setScrolled] = useState(false)
 
     const handleScroll = () => {
         const offset=window.scrollY;
-        if(offset > 948 ){
+        if(offset > height ){
             setScrolled(true);
         } else {
             setScrolled(false);
@@ -92,10 +95,10 @@ function Navbar () {
                     </div>
                     <div>
                         <Link
-                        to="contact-section"
+                        to="footer-section"
                         spy={true}
                         smooth={true}
-                        offset={-150}
+                        offset={-100}
                         duration={500}
                         className='contact-section'
                         activeClass='active-contact'
@@ -176,10 +179,10 @@ function Navbar () {
                         </div>
                         <div>
                             <Link
-                            to="contact-section"
+                            to="footer-section"
                             spy={true}
                             smooth={true}
-                            offset={-150}
+                            offset={0}
                             duration={500}
                             className='contact-section'
                             activeClass='active-contact'

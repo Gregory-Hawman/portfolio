@@ -7,19 +7,20 @@
 .about-bio {
   display: flex;
   justify-content: space-evenly;
-  width: 75%;
+  width: 95%;
   margin: 0 auto;
   align-items: center;
 }
 .about-bio .about-img {
   width: 300px;
   height: 300px;
+  min-width: 300px;
 }
 .about-bio .about-img img {
   border-radius: 30px;
 }
 .about-bio .about-bio-text {
-  width: 55%;
+  width: 75%;
 }
 .about-bio .about-bio-text h2 {
   font-size: 25px;
@@ -29,7 +30,7 @@
 .about-bio .about-bio-text p {
   font-size: 20px;
   text-align: left;
-  margin: 0 1rem;
+  margin: 1rem 1rem 0;
 }
 
 .about-skills {
@@ -51,6 +52,10 @@
 .about-skills .about-div .about-skill-logo {
   width: 30px;
   height: 30px;
+  min-width: 30px;
+}
+.about-skills .about-div .about-skill-logo:first-child {
+  margin-left: 2rem;
 }
 .about-skills .about-div .about-skill-name {
   font-size: 20px;
