@@ -4,7 +4,7 @@ import '../css/workModal.css'
 function WorkModal (props) {
     return (
         <div className='work-modal'>
-            <img className='modal-img' src={props.img} alt={props.name}/>
+            <img className='modal-img' src={props.modalImg} alt={props.name}/>
             <div className='modal-text'>
                 <h1>{props.name}</h1>
                 <h2>{props.tag}</h2>

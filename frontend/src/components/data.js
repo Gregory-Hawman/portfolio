@@ -6,8 +6,10 @@ import cssIcon from '../images/logos/css3.svg'
 import pythonIcon from '../images/logos/python.svg'
 import nodejsIcon from '../images/logos/Node.js_logo.svg'
 
-import bgImg from '../images/projects/bridgegood.jpg'
-import golImg from '../images/projects/gameOfLifeImg.png'
+import bgImg from '../images/projects/bridgegood-small.jpg'
+import bgImgBig from '../images/projects/bridgegood-big.jpg'
+import golImg from '../images/projects/gol-small.jpg'
+import golImgBig from '../images/projects//gol-big.jpg'
 import bblsImg from '../images/projects/bubblesImg.png'
 
 import iraPic from '../images/ira-pic.jpg'
@@ -27,10 +29,10 @@ export const skillsData = [
 export const projectData = [
     {   
         name: 'BRIDGEGOOD',
-        detail: 'A place I worked once!',
+        detail: `A reservation app where users can reserve a space at the BRIDGEGOOD Creative Studio to come in and study and or work as a designer. I created the Front-end using react and redux to make the reservation page, and the back-end with Node.js to store the data to make a reservation, and using Jest to test everything.`,
         img: bgImg,
         link: 'https://www.bridgegood.dev/',
-        modalImg: '',
+        modalImg: bgImgBig,
         tag: '',
         tech: 'React | Redux | Node.js', 
     },
@@ -38,8 +40,8 @@ export const projectData = [
         name: `Conway's Game of Life`,
         detail: 'A zero-player game, its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. It is Turing complete and can simulate a universal constructor or any other Turing machine.',
         img: golImg,
-        link: 'https://www.bridgegood.dev/',
-        modalImg: '',
+        link: 'https://game-of-life-again.vercel.app/',
+        modalImg: golImgBig,
         tag: 'a cellular automaton game',
         tech: 'JavaScript | React',
     },
@@ -52,34 +54,34 @@ export const projectData = [
         tag: '',
         tech: 'React | Redux ',
     },
-    {
-        name: 'Sleep Tracker',
-        detail: 'A place I worked once!',
-        img: '',
-        link: 'https://www.bridgegood.dev/',
-        modalImg: '',
-        tag: '',
-        tech: 'React | Redux | Node.js',
+    // {
+    //     name: 'Sleep Tracker',
+    //     detail: 'A place I worked once!',
+    //     img: '',
+    //     link: 'https://www.bridgegood.dev/',
+    //     modalImg: '',
+    //     tag: '',
+    //     tech: 'React | Redux | Node.js',
         
-    },
-    {
-        name: 'Family Recipes', 
-        detail: 'A place I worked once!',
-        img: '',
-        link: 'https://www.bridgegood.dev/',
-        modalImg: '',
-        tag: '',
-        tech: 'React | Redux | Node.js',
-    },
-    { 
-        name: 'MedCabinet', 
-        detail: 'A place I worked once!',
-        img: '',
-        link: 'https://www.bridgegood.dev/',
-        modalImg: '',
-        tag: '',
-        tech: 'React | Redux | Node.js',
-    },
+    // },
+    // {
+    //     name: 'Family Recipes', 
+    //     detail: 'A place I worked once!',
+    //     img: '',
+    //     link: 'https://www.bridgegood.dev/',
+    //     modalImg: '',
+    //     tag: '',
+    //     tech: 'React | Redux | Node.js',
+    // },
+    // { 
+    //     name: 'MedCabinet', 
+    //     detail: 'A place I worked once!',
+    //     img: '',
+    //     link: 'https://www.bridgegood.dev/',
+    //     modalImg: '',
+    //     tag: '',
+    //     tech: 'React | Redux | Node.js',
+    // },
     // {
     //     detail: 'A place I worked once!',
     //     img: '',

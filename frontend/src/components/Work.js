@@ -17,16 +17,6 @@ function Projects (props) {
 
     const modal = useRef(null)
 
-    // const onClickMore = () => {
-    //     for ( let i = 0; i < modalText.length; i++ ) {
-    //         if (props.modalKey === modalText[i].modalKey) {
-    //             console.log(modalText[i].name)
-    //         }
-    //     }
-    // }
-
-    // console.log(modalText)
-
     return (
         <div className='works' onMouseEnter={onHover} onMouseLeave={onLeave}>
             <img src={props.img} alt={props.name}/>

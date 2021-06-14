@@ -16,7 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -27,6 +27,8 @@
   margin: 0.3rem;
 }
 .works img {
+  max-width: 500px;
+  min-height: 500px;
   border-radius: 11px;
   overflow: hidden;
   height: 100%;
@@ -36,9 +38,11 @@
   opacity: 0.85;
   color: white;
   border-radius: 10px;
-  padding: 5rem 0;
+  padding: 25% 0;
+  max-width: 500px;
+  min-height: 500px;
   height: 100%;
-  margin: -20rem 0 0;
+  margin: -31.25rem 0 0;
   animation: fadeIn 0.3s;
 }
 @keyframes fadeIn {
@@ -55,7 +59,7 @@
   font-weight: bolder;
 }
 .works .work-hover .work-tech {
-  margin: 0 0 1rem;
+  margin: 2.5% 0 1rem;
   color: crimson;
   font-size: 20px;
   font-weight: bolder;
@@ -68,7 +72,7 @@
   font-size: 15px;
   font-weight: 700;
   width: 30%;
-  margin: 0 auto;
+  margin: 10% auto 0;
   padding: 0.5rem 1rem;
   border-radius: 10px;
 }

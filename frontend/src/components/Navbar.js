@@ -10,7 +10,7 @@ import '../css/navbar.css';
 function Navbar () {
     const Link = Scroll.Link
     const { height, width } = useWindowDimensions();
-    console.log('height', height, 'width', width)
+    // console.log('height', height, 'width', width)
 
     // ANIMATED INSTEAD OF FIXED NAVBAR SCROLL
     const [scrolled, setScrolled] = useState(false)
@@ -85,7 +85,7 @@ function Navbar () {
                         to="test-section"
                         spy={true}
                         smooth={true}
-                        offset={-150}
+                        offset={-125}
                         duration={500}
                         className='test-section'
                         activeClass='active-test'
@@ -169,7 +169,7 @@ function Navbar () {
                             to="test-section"
                             spy={true}
                             smooth={true}
-                            offset={-235}
+                            offset={-125}
                             duration={500}
                             className='test-section'
                             activeClass='active-test'

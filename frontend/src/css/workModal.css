@@ -1,8 +1,9 @@
 .work-modal .modal-img {
+  width: 100%;
   border-bottom: 3px solid grey;
 }
 .work-modal .modal-text {
-  margin: 0.5rem 2rem 2rem;
+  margin: 0.5rem 4rem 2rem 2rem;
 }
 .work-modal h2 {
   text-transform: uppercase;
@@ -12,7 +13,7 @@
 }
 .work-modal p {
   border-top: 1px solid slategray;
-  padding: 1rem 0;
+  padding: 1rem 0rem;
 }
 .work-modal .modal-button {
   text-transform: uppercase;
