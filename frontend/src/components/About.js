@@ -19,7 +19,7 @@ function About () {
                         <p>
                             Hello, welcome to my portfolio. I help people make dreams a reality with clean and easy to use UI that runs at blisteringly fast speeds.
                             <br/>
-                            I studied at DePaul University in Chicago where I got a degree in Digital Media and Communications, and honed an artistic eye for detail. At Lambda School they gave me the skills to turn those artistic ideas into reality with code. 
+                            I studied at DePaul University in Chicago where I got a degree in Digital Media/Communications, and honed an artistic eye for detail. At Lambda School they gave me the skills to turn those artistic ideas into reality with code. 
                         </p>
                     </div>
                 </div>

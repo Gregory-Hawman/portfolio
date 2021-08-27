@@ -1,59 +1,22 @@
-@mixin phone-only {
-  @media (max-width: 599px) { @content; }
-}
-
-@mixin tablet-portrait {
-  @media (min-width: 600px) { @content; }
-}
-
-@mixin tablet-landscape {
-  @media (min-width: 900px) { @content; }
-}
-
-@mixin desktop {
-  @media (min-width: 1200px) { @content; }
-}
-
-@mixin big-desktop {
-  @media (min-width: 1800px) { @content; }
+@mixin respond($breakpoint) {
+  @if($breakpoint == phone){
+      @media (max-width: 599px) { @content }
+  }
+  @if($breakpoint == tabletP){
+      @media (min-width: 600px) { @content }
+  }
+  @if($breakpoint == tabletL){
+      @media (min-width: 900px) { @content }
+  }
+  @if($breakpoint == desktop){
+      @media (min-width: 1200px) { @content }
+  }
+  @if($breakpoint == desktopL){
+      @media (min-width: 1800px) { @content }
+  }
 }
 
 .App {
     text-align: center;
     width: 100%
-  }
-  
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

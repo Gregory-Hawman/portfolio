@@ -8,71 +8,70 @@ function Contact () {
         if (state.succeeded){
             return (
                 <Element id='contact-section-success' name='contact-section'>
-                <div className='contact-form'>
-                    <h2>Contact Me</h2>
-                    <form
-                        onSubmit={handleSubmit}
-                        action='https://formspree.io/f/mjvjgbqe'
-                        method='POST'
-                    >
-                        <div className='form'>
-                            <div className='formName'>
-                                <input id='name' type='name' name='name' placeholder='Your Name'/>
-                                <ValidationError prefix='Name' field='name' errors={state.errors}/>
-                            </div>
-                        
-                            <div className='formEmail'>
-                                <input id='email' type='email' name='email' placeholder='Email Address'/>
-                                <ValidationError prefix='Email' field='email' errors={state.errors}/>
-                            </div>
+                    <div className='contact-form'>
+                        <h2>Contact Me</h2>
+                        <form
+                            onSubmit={handleSubmit}
+                            action='https://formspree.io/f/mjvjgbqe'
+                            method='POST'
+                        >
+                            <div className='form'>
+                                <div className='formName'>
+                                    <input id='name' type='name' name='name' placeholder='Your Name'/>
+                                    <ValidationError prefix='Name' field='name' errors={state.errors}/>
+                                </div>
+                            
+                                <div className='formEmail'>
+                                    <input id='email' type='email' name='email' placeholder='Email Address'/>
+                                    <ValidationError prefix='Email' field='email' errors={state.errors}/>
+                                </div>
 
-                            <div className='formMessage'>
-                                <textarea id='message' name='message' placeholder='Leave a message!'/>
-                                <ValidationError prefix='Message' field='message' errors={state.errors}/>
-                            </div>
-                        </div>
-     
-                        <button className='contact-button' type='submit' disabled={state.submitting}>Send</button>
-                    </form>
-                    <p className='contact-success'>Thank you for getting in contact!</p>
-                </div>
-            </Element>
+                                <div className='formMessage'>
+                                    <textarea id='message' name='message' placeholder='Leave a message!'/>
+                                    <ValidationError prefix='Message' field='message' errors={state.errors}/>
+                                </div>
+
+                                <button className='contact-button' type='submit' disabled={state.submitting}>Send</button>
+                            </div> 
+                        </form>
+
+                        <p className='contact-success'>Thank you for getting in contact!</p>
+                    </div>
+                </Element>
             );
         }
 
     return (
-        <div>
-            <Element id='contact-section' name='contact-section'>
-                <div className='contact-form'>
-                    <h2>Contact Me</h2>
-                    <form
-                        onSubmit={handleSubmit}
-                        action='https://formspree.io/f/mjvjgbqe'
-                        method='POST'
-                    >
-                        <div className='form'>
-                            <div className='formName'>
-                                <input id='name' type='name' name='name' placeholder='Your Name'/>
-                                <ValidationError prefix='Name' field='name' errors={state.errors}/>
-                            </div>
-                        
-                            <div className='formEmail'>
-                                <input id='email' type='email' name='email' placeholder='Email Address'/>
-                                <ValidationError prefix='Email' field='email' errors={state.errors}/>
-                            </div>
-
-                            <div className='formMessage'>
-                                <textarea id='message' name='message' placeholder='Leave a message!'/>
-                                <ValidationError prefix='Message' field='message' errors={state.errors}/>
-                            </div>
+        <Element id='contact-section' name='contact-section'>
+            <div className='contact-form'>
+                <h2>Contact Me</h2>
+                <form
+                    onSubmit={handleSubmit}
+                    action='https://formspree.io/f/mjvjgbqe'
+                    method='POST'
+                >
+                    <div className='form'>
+                        <div className='formName'>
+                            <input id='name' type='name' name='name' placeholder='Your Name'/>
+                            <ValidationError prefix='Name' field='name' errors={state.errors}/>
                         </div>
-     
-                        <button className='contact-button' type='submit' disabled={state.submitting}>Send</button>
-                    </form>
                     
-                </div>
-            </Element>
-        </div>
+                        <div className='formEmail'>
+                            <input id='email' type='email' name='email' placeholder='Email Address'/>
+                            <ValidationError prefix='Email' field='email' errors={state.errors}/>
+                        </div>
+
+                        <div className='formMessage'>
+                            <textarea id='message' name='message' placeholder='Leave a message!'/>
+                            <ValidationError prefix='Message' field='message' errors={state.errors}/>
+                        </div>
+
+                        <button className='contact-button' type='submit' disabled={state.submitting}>Send</button>
+                    </div>
+                </form>
+                
+            </div>
+        </Element>
     )
 }
 

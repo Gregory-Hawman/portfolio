@@ -1,11 +1,42 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == smallPhone {
+      @media (max-width: 460px) { @content };
+  }
+  @if $breakpoint == phone {
+      @media (min-width: 461px) { @content };
+  }
+  @if $breakpoint == tablet {
+      @media (min-width: 768px) { @content };
+  }
+  @if $breakpoint == desktop {
+      @media (min-width: 1000px) { @content };
+  }
+  @if $breakpoint == largeDesktop {
+      @media (min-width: 1800px) { @content };
+  }
+}
+
+@include respond(smallPhone){
+              
+}
+
 #work-section {
   padding: 7rem 0 7rem;
   background-color: #010b39;
-  height: 100vh;
+
+  @include respond(smallPhone){
+    padding: 4rem 0;    
+  }
+  @include respond(phone){
+    padding: 4rem 0;
+  }
+  @include respond(tablet){
+    padding: 4rem 0;      
+  }
 
   h2 {
     color: white;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-decoration: underline;
     text-decoration-style:solid;
     text-decoration-thickness:10px;
@@ -19,20 +50,54 @@
   justify-content: center;
   width: 90%;
   margin: 0 auto;
+
+  @include respond(smallPhone){
+    flex-direction: column;
+    align-items: center;    
+  }
+  @include respond(phone){
+    flex-direction: column;
+    align-items: center;     
+  }
+  @include respond(tablet){
+    flex-direction: column;
+    align-items: center;         
+  }
 }
 
 .works {
-  width: 30%;
+  width: 100%;
   border-radius: 15px;
-  height:20rem;
   margin: .3rem;
 
+  @include respond(smallPhone){
+    width: 90%;
+    margin: 0 0 2rem;    
+  }
+  @include respond(phone){
+    width: 80%;
+    margin: 0 0 1rem;       
+  }
+  @include respond(tablet){
+    width: 80%;
+    margin: 0 0 2rem;        
+  }
+
   img {
-    max-width: 500px;
-    min-height: 500px;
+    max-width: 50rem;
     border-radius: 11px;
     overflow: hidden;
-    height: 100%;
+
+    @include respond(smallPhone){
+      width: 100%;   
+    }
+    @include respond(phone){
+      width: 100%;
+      margin: 0rem 0 1rem;       
+    }
+    @include respond(tablet){
+      max-width: 30rem;     
+    }
   }
 
   .work-hover {
@@ -40,15 +105,20 @@
     opacity: .85;
     color: white;
     border-radius: 10px;
-    padding: 25% 0;
-    max-width: 500px;
-    min-height: 500px;
-    height: 100%;
-    margin: -31.25rem 0 0;
     animation: fadeIn .3s;
     @keyframes fadeIn {
       0% {opacity: 0;}
       100% {opacity: .85;}
+    }
+
+    padding: 25% 0;
+    max-width: 45rem;
+    margin: -21rem 0 0;
+  
+    @include respond(phone){
+      padding: 24.5% 0;
+      max-width: 20rem;
+      margin: -20.76rem 0 0;
     }
 
     .work-name {

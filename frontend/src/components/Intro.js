@@ -34,20 +34,22 @@ function Intro () {
         <Element id='intro-section' name='intro-section' className={introClasses.join(' ')} >
             <div className='particle-div'>
                 <Particles params={particlesConfig} />
-            </div>
-            <div className='intro'>
-                <div className='intro-content'>
-                    <div>
+                    <div className='intro'>
+                    <div className='intro-name'>
                         <h1>Hello, I'm </h1>
                         <h2>Gregory Hawman</h2>
                     </div>
-                    <p>I'm a Full-Stack Web Developer</p>
+                    
+                    <div>
+                        <p>I'm a Full-Stack Web Developer</p>
+                    </div>
+                    
                     <div>
                         <Link
                         to="about-section"
                         spy={true}
                         smooth={true}
-                        offset={-260}
+                        offset={-125}
                         duration={500}
                         className='intro-button'
                         >
@@ -56,6 +58,7 @@ function Intro () {
                     </div> 
                 </div>
             </div>
+            
         </Element>
     )
 }

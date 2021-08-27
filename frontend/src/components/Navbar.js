@@ -10,14 +10,13 @@ import '../css/navbar.css';
 function Navbar () {
     const Link = Scroll.Link
     const { height, width } = useWindowDimensions();
-    // console.log('height', height, 'width', width)
 
     // ANIMATED INSTEAD OF FIXED NAVBAR SCROLL
     const [scrolled, setScrolled] = useState(false)
 
     const handleScroll = () => {
         const offset=window.scrollY;
-        if(offset > height ){
+        if(offset > height){
             setScrolled(true);
         } else {
             setScrolled(false);
@@ -28,19 +27,10 @@ function Navbar () {
         window.addEventListener('scroll', handleScroll)
     })
 
-    // let navbarClasses=['navbar'];
-    //     if(scrolled){
-    //         navbarClasses.push('scrolled');
-    //     }
-
     return (
         <> 
             <div className='navbar'>
-                <div className='nav img logo'>
-                    {/* <img src={myLogo} alt='my-logo' />    */}
-                </div>
-                
-                <div className='nav links'>
+                <div className='nav-links'>
                     <div>
                         <Link
                         to="intro-section"
@@ -51,7 +41,7 @@ function Navbar () {
                         className='intro-section'
                         activeClass='active-intro'
                         >
-                        Home
+                            Home
                         </Link>
                     </div>
                     <div>
@@ -59,7 +49,7 @@ function Navbar () {
                         to="about-section"
                         spy={true}
                         smooth={true}
-                        offset={-260}
+                        offset={-125}
                         duration={500}
                         className='about-section'
                         activeClass='active-about'
@@ -72,7 +62,7 @@ function Navbar () {
                         to="work-section"
                         spy={true}
                         smooth={true}
-                        offset={-75}
+                        offset={-50}
                         duration={500}
                         className='work-section'
                         activeClass='active-work'
@@ -120,11 +110,7 @@ function Navbar () {
 
             {scrolled ? 
                 <div className='scrolled'>
-                    <div className='nav img logo'>
-                        {/* <img src={myLogo} alt='my-logo' />    */}
-                    </div>
-                    
-                    <div className='nav links'>
+                    <div className='nav-links'>
                         <div>
                             <Link
                             to="intro-section"
@@ -143,7 +129,7 @@ function Navbar () {
                             to="about-section"
                             spy={true}
                             smooth={true}
-                            offset={-260}
+                            offset={-125}
                             duration={500}
                             className='about-section'
                             activeClass='active-about'
@@ -156,7 +142,7 @@ function Navbar () {
                             to="work-section"
                             spy={true}
                             smooth={true}
-                            offset={-75}
+                            offset={-50}
                             duration={500}
                             className='work-section'
                             activeClass='active-work'

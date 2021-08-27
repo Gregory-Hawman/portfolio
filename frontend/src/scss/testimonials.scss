@@ -1,19 +1,70 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == smallPhone {
+        @media (max-width: 460px) { @content };
+    }
+    @if $breakpoint == phone {
+        @media (min-width: 461px) { @content };
+    }
+    @if $breakpoint == tablet {
+        @media (min-width: 768px) { @content };
+    }
+    @if $breakpoint == desktop {
+        @media (min-width: 1000px) { @content };
+    }
+    @if $breakpoint == largeDesktop {
+        @media (min-width: 1800px) { @content };
+    }
+}
+
+@include respond(tablet){
+                
+}
+
 #test-section {
-    margin: 10rem auto 10rem;
+    margin: 10rem auto;
     width: 85%;
-    height: 100vh;
+
+    @include respond(smallPhone){
+        margin: 3rem auto;
+    }
+    @include respond(phone){
+        margin: 5rem auto;       
+    }
+    @include respond(tablet){
+        margin: 5rem auto;
+    }
 
     h2 {
-        font-size: 40px;
+        font-size: 3rem;
         text-decoration: underline;
         text-decoration-thickness: 7.5px;
         margin-bottom: 2rem;
+
+        @include respond(smallPhone){
+            font-size: 2rem; 
+        }
+        @include respond(phone){
+            font-size: 2rem;        
+        }
+        @include respond(tablet){
+            font-size: 2.5rem; 
+        }
     }
 }
 
 .tests {
     display: flex;
     justify-content: space-evenly;
+
+    @include respond(smallPhone){
+        flex-direction: column;
+    }
+    @include respond(phone){
+        flex-direction: column;           
+    }
+    @include respond(tablet){
+        flex-direction: column;  
+    }
 }
 
 .test-card {
@@ -21,12 +72,29 @@
     background-color: #010b39;
     border-radius: 30px;
     width: 25%;
+
+    @include respond(smallPhone){
+        width: 95%;
+        margin: 0 auto 1rem;
+    }
+    @include respond(phone){
+        width: 75%;
+        margin: 0 auto 1rem;           
+    }
+    @include respond(tablet){
+        width: 75%;
+        margin: 0 auto 1rem;  
+    }
 }
 
 .test-img {
     width: 200px;
     height: 200px;
     margin: 2rem auto 0;
+
+    @include respond(smallPhone){
+        margin: 3.5rem auto 0;
+    }
     
     img {
         border-radius: 30px;

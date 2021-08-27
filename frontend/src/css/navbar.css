@@ -3,17 +3,11 @@
   border-bottom: 0.5px solid #797979;
   justify-content: space-between;
   box-shadow: 0px 0.5px 5px 0.5px #888888;
-  padding: 1rem 1rem;
+  padding: 1rem 0;
   width: 100%;
-  min-height: 5vh;
-  box-sizing: border-box;
   align-items: center;
   background-color: #eee;
   transition: all 0.7s ease-in;
-}
-.navbar img {
-  width: 40px;
-  height: 40px;
 }
 
 .scrolled {
@@ -21,9 +15,8 @@
   border-bottom: 0.5px solid #797979;
   justify-content: space-between;
   box-shadow: 0px 0.5px 5px 0.5px #888888;
-  padding: 1rem 1rem;
+  padding: 1rem 0;
   width: 100%;
-  min-height: 5vh;
   box-sizing: border-box;
   align-items: center;
   background-color: #eee;
@@ -33,38 +26,61 @@
   left: 0;
   z-index: 10;
 }
-.scrolled img {
-  width: 40px;
-  height: 40px;
-}
 
-.nav {
+.nav-links {
   display: flex;
-  margin: 0 1rem;
-  font-size: 20px;
+  margin: 0 0 0 1rem;
+  font-size: 1.3rem;
 }
-.nav div {
+@media (max-width: 460px) {
+  .nav-links {
+    font-size: 1rem;
+    margin: 0 0 0 0.25rem;
+  }
+}
+@media (min-width: 461px) {
+  .nav-links {
+    font-size: 1rem;
+  }
+}
+.nav-links div {
   padding: 0 1rem;
 }
-.nav div:hover {
+.nav-links div:hover {
   color: crimson;
   cursor: pointer;
 }
-
-.links {
-  margin: 0 0 0 5rem;
+@media (max-width: 460px) {
+  .nav-links div {
+    padding: 0 0.3rem;
+  }
 }
-
-.logo {
-  width: 40px;
-  height: 40px;
+@media (min-width: 461px) {
+  .nav-links div {
+    padding: 0 0.3rem;
+  }
 }
 
 .social-links {
   display: flex;
+  margin: 0 1rem 0 1rem;
+}
+.social-links img {
+  width: 2rem;
+  min-width: 1rem;
 }
 .social-links a {
-  margin: 0 0.5rem;
+  margin: 0 0.25rem;
+}
+@media (max-width: 460px) {
+  .social-links a {
+    margin: 0 0.1rem;
+  }
+}
+@media (max-width: 460px) {
+  .social-links {
+    margin: 0 0.25rem 0 0.25rem;
+  }
 }
 
 /*# sourceMappingURL=navbar.css.map */
