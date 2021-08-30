@@ -14,7 +14,12 @@
 }
 @media (min-width: 768px) {
   #about-section {
-    margin: 4rem 0;
+    margin: 6rem 0;
+  }
+}
+@media (min-width: 1800px) {
+  #about-section {
+    margin: 8rem 0;
   }
 }
 
@@ -38,11 +43,18 @@
 @media (min-width: 768px) {
   .about-bio {
     flex-direction: column;
+    width: 80%;
+  }
+}
+@media (min-width: 1000px) {
+  .about-bio {
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto 4rem;
   }
 }
 .about-bio .about-img {
-  width: 20rem;
-  height: 20rem;
+  width: 100%;
 }
 .about-bio .about-img img {
   border-radius: 30px;
@@ -65,7 +77,9 @@
 }
 @media (min-width: 768px) {
   .about-bio .about-img {
-    margin: 0 0 2rem;
+    width: 40%;
+    align-items: center;
+    margin: 0;
   }
 }
 .about-bio .about-bio-text {
@@ -79,19 +93,25 @@
 }
 @media (min-width: 461px) {
   .about-bio .about-bio-text {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
   }
 }
 @media (min-width: 768px) {
   .about-bio .about-bio-text {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  .about-bio .about-bio-text {
+    width: 60%;
+    margin: 0 2rem;
   }
 }
 .about-bio .about-bio-text h2 {
   font-size: 1.5rem;
-  text-align: left;
+  text-align: center;
   margin: 0 1rem;
 }
 @media (max-width: 460px) {
@@ -107,12 +127,23 @@
 }
 @media (min-width: 768px) {
   .about-bio .about-bio-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1000px) {
+  .about-bio .about-bio-text h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1800px) {
+  .about-bio .about-bio-text h2 {
+    font-size: 2rem;
   }
 }
 .about-bio .about-bio-text p {
   font-size: 1.25rem;
-  text-align: left;
+  text-align: center;
   margin: 1rem 1rem 0;
 }
 @media (max-width: 460px) {
@@ -128,7 +159,18 @@
 }
 @media (min-width: 768px) {
   .about-bio .about-bio-text p {
-    font-size: 1.25rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .about-bio .about-bio-text p {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1800px) {
+  .about-bio .about-bio-text p {
+    font-size: 1.5rem;
   }
 }
 
@@ -147,14 +189,14 @@
 }
 @media (min-width: 461px) {
   .about-skills {
-    width: 80%;
-    margin: 2rem 0 0 2rem;
+    width: 75%;
+    margin: 2rem auto;
   }
 }
 @media (min-width: 768px) {
   .about-skills {
     width: 80%;
-    margin: 2rem 0 0 2rem;
+    margin: 2rem auto 0;
   }
 }
 .about-skills h3 {
@@ -163,16 +205,32 @@
 @media (max-width: 460px) {
   .about-skills h3 {
     font-size: 1.15rem;
-    margin: 0 1rem;
+    margin: 0 1rem 0 0;
   }
 }
 @media (min-width: 461px) {
   .about-skills h3 {
     font-size: 1.15rem;
+    margin: 0 0.5rem 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .about-skills h3 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1000px) {
+  .about-skills h3 {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1800px) {
+  .about-skills h3 {
+    font-size: 2rem;
   }
 }
 .about-skills .about-div {
-  width: 10%;
+  width: 15%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -189,7 +247,18 @@
 }
 @media (min-width: 768px) {
   .about-skills .about-div {
-    margin: 0 2rem;
+    width: 20%;
+    margin: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .about-skills .about-div {
+    width: 15%;
+  }
+}
+@media (min-width: 1800px) {
+  .about-skills .about-div {
+    width: 10%;
   }
 }
 .about-skills .about-div .about-skill-logo {
@@ -197,12 +266,14 @@
   height: 2rem;
   min-width: 2rem;
 }
-.about-skills .about-div .about-skill-logo:first-child {
-  margin-left: 2rem;
-}
 @media (min-width: 461px) {
   .about-skills .about-div .about-skill-logo {
     margin: 0 0.5rem 0.5rem 0;
+  }
+}
+@media (min-width: 768px) {
+  .about-skills .about-div .about-skill-logo {
+    margin: 0 0.5rem 0 0;
   }
 }
 .about-skills .about-div .about-skill-name {

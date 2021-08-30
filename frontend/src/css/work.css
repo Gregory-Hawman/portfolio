@@ -1,5 +1,5 @@
 #work-section {
-  padding: 7rem 0 7rem;
+  padding: 7rem 0;
   background-color: #010b39;
 }
 @media (max-width: 460px) {
@@ -17,6 +17,16 @@
     padding: 4rem 0;
   }
 }
+@media (min-width: 1000px) {
+  #work-section {
+    padding: 6rem 0;
+  }
+}
+@media (min-width: 1800px) {
+  #work-section {
+    padding: 10rem 0;
+  }
+}
 #work-section h2 {
   color: white;
   font-size: 2.5rem;
@@ -24,6 +34,11 @@
   text-decoration-style: solid;
   text-decoration-thickness: 10px;
   margin-bottom: 2rem;
+}
+@media (min-width: 1800px) {
+  #work-section h2 {
+    font-size: 3rem;
+  }
 }
 
 .work-container {
@@ -51,6 +66,11 @@
     align-items: center;
   }
 }
+@media (min-width: 1000px) {
+  .work-container {
+    flex-direction: row;
+  }
+}
 
 .works {
   width: 100%;
@@ -71,8 +91,20 @@
 }
 @media (min-width: 768px) {
   .works {
-    width: 80%;
+    width: 90%;
     margin: 0 0 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .works {
+    width: 40%;
+    margin: 2rem;
+  }
+}
+@media (min-width: 1800px) {
+  .works {
+    width: 33%;
+    margin: 2rem 0;
   }
 }
 .works img {
@@ -94,6 +126,7 @@
 @media (min-width: 768px) {
   .works img {
     max-width: 30rem;
+    margin: 0 auto;
   }
 }
 .works .work-hover {
@@ -102,9 +135,9 @@
   color: white;
   border-radius: 10px;
   animation: fadeIn 0.3s;
-  padding: 25% 0;
-  max-width: 45rem;
-  margin: -21rem 0 0;
+  padding: 23% 0;
+  width: 100%;
+  margin: -19rem 0 0;
 }
 @keyframes fadeIn {
   0% {

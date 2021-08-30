@@ -14,7 +14,17 @@
 }
 @media (min-width: 768px) {
   #test-section {
-    margin: 5rem auto;
+    margin: 4rem auto;
+  }
+}
+@media (min-width: 1000px) {
+  #test-section {
+    margin: 6rem auto 8rem;
+  }
+}
+@media (min-width: 1800px) {
+  #test-section {
+    margin: 10rem auto 12rem;
   }
 }
 #test-section h2 {
@@ -38,6 +48,11 @@
     font-size: 2.5rem;
   }
 }
+@media (min-width: 1800px) {
+  #test-section h2 {
+    font-size: 3rem;
+  }
+}
 
 .tests {
   display: flex;
@@ -55,12 +70,14 @@
 }
 @media (min-width: 768px) {
   .tests {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .test-card {
   margin: 1rem;
+  padding: 0 0 1rem 0;
   background-color: #010b39;
   border-radius: 30px;
   width: 25%;
@@ -79,7 +96,19 @@
 }
 @media (min-width: 768px) {
   .test-card {
-    width: 75%;
+    width: 45%;
+    margin: 0 auto 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .test-card {
+    width: 30%;
+    margin: 0 auto 1rem;
+  }
+}
+@media (min-width: 1800px) {
+  .test-card {
+    width: 25%;
     margin: 0 auto 1rem;
   }
 }
@@ -94,6 +123,11 @@
     margin: 3.5rem auto 0;
   }
 }
+@media (min-width: 461px) {
+  .test-img {
+    margin: 3.5rem auto 0;
+  }
+}
 .test-img img {
   border-radius: 30px;
   border: 3px solid white;
@@ -101,15 +135,25 @@
 
 .test-text {
   width: 95%;
-  margin: 1rem auto;
+  margin: 1rem auto 2rem;
   color: #fff;
 }
+@media (min-width: 1800px) {
+  .test-text h3 {
+    font-size: 1.5rem;
+  }
+}
 .test-text div {
-  margin: 0 1rem 2rem;
+  margin: 0 0.5rem 1rem;
 }
 .test-text div p {
   text-align: left;
-  padding: 0 1rem 1rem;
+  padding: 0 1rem 2rem;
+}
+@media (min-width: 1800px) {
+  .test-text div p {
+    font-size: 1.1rem;
+  }
 }
 
 /*# sourceMappingURL=testimonials.css.map */

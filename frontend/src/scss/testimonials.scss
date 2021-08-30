@@ -16,7 +16,7 @@
     }
 }
 
-@include respond(tablet){
+@include respond(largeDesktop){
                 
 }
 
@@ -31,7 +31,13 @@
         margin: 5rem auto;       
     }
     @include respond(tablet){
-        margin: 5rem auto;
+        margin: 4rem auto;
+    }
+    @include respond(desktop){
+        margin: 6rem auto 8rem;   
+    }
+    @include respond(largeDesktop){
+        margin: 10rem auto 12rem;      
     }
 
     h2 {
@@ -49,6 +55,9 @@
         @include respond(tablet){
             font-size: 2.5rem; 
         }
+        @include respond(largeDesktop){
+            font-size: 3rem;      
+        }
     }
 }
 
@@ -63,12 +72,14 @@
         flex-direction: column;           
     }
     @include respond(tablet){
-        flex-direction: column;  
+        flex-direction: row; 
+        flex-wrap: wrap; 
     }
 }
 
 .test-card {
     margin: 1rem;
+    padding: 0 0 1rem 0;
     background-color: #010b39;
     border-radius: 30px;
     width: 25%;
@@ -79,11 +90,19 @@
     }
     @include respond(phone){
         width: 75%;
-        margin: 0 auto 1rem;           
+        margin: 0 auto 1rem;          
     }
     @include respond(tablet){
-        width: 75%;
+        width: 45%;
         margin: 0 auto 1rem;  
+    }
+    @include respond(desktop){
+        width: 30%;
+        margin: 0 auto 1rem;       
+    }
+    @include respond(largeDesktop){
+        width: 25%;
+        margin: 0 auto 1rem;       
     }
 }
 
@@ -95,6 +114,9 @@
     @include respond(smallPhone){
         margin: 3.5rem auto 0;
     }
+    @include respond(phone){
+        margin: 3.5rem auto 0;           
+    }
     
     img {
         border-radius: 30px;
@@ -104,14 +126,24 @@
 
 .test-text {
     width: 95%;
-    margin: 1rem auto;
+    margin: 1rem auto 2rem;
     color: #fff;
+
+    h3 {
+        @include respond(largeDesktop){
+            font-size: 1.5rem;     
+        }
+    }
     
     div {
-        margin: 0 1rem 2rem;
+        margin: 0 .5rem 1rem;
         p {
             text-align: left; 
-            padding: 0 1rem 1rem;
+            padding: 0 1rem 2rem;
+
+            @include respond(largeDesktop){
+                font-size: 1.1rem;     
+            }
         }
     }
 }

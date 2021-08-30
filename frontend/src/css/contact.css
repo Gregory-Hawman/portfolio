@@ -1,7 +1,6 @@
 #contact-section {
   padding: 10rem 0 15.5rem;
   background-color: #010b39;
-  height: 100vh;
 }
 @media (max-width: 460px) {
   #contact-section {
@@ -15,7 +14,17 @@
 }
 @media (min-width: 768px) {
   #contact-section {
-    padding: 10rem 0 8rem;
+    padding: 12rem 0 8rem;
+  }
+}
+@media (min-width: 1000px) {
+  #contact-section {
+    padding: 14rem 0 8rem;
+  }
+}
+@media (min-width: 1800px) {
+  #contact-section {
+    padding: 18rem 0 8rem;
   }
 }
 #contact-section h2 {
@@ -41,6 +50,12 @@
     margin-bottom: 4rem;
   }
 }
+@media (min-width: 1800px) {
+  #contact-section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
 
 .form {
   display: flex;
@@ -61,6 +76,17 @@
 @media (min-width: 768px) {
   .form {
     width: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  .form {
+    width: 80%;
+  }
+}
+@media (min-width: 1800px) {
+  .form {
+    font-size: 1.25rem;
+    width: 70%;
   }
 }
 .form div {
@@ -90,13 +116,18 @@
 .form textarea {
   height: 10rem;
 }
+@media (min-width: 1800px) {
+  .form textarea {
+    height: 15rem;
+  }
+}
 
 .contact-button {
   background-color: #010b39;
   border: 2px solid crimson;
   border-radius: 10px;
   color: crimson;
-  font-size: 20px;
+  font-size: 1.5rem;
   padding: 0.5rem 2rem;
 }
 .contact-button:hover {
@@ -118,8 +149,20 @@
 }
 @media (min-width: 768px) {
   .contact-button {
-    width: 50%;
+    width: 30%;
     margin: 1rem auto 0;
+  }
+}
+@media (min-width: 1000px) {
+  .contact-button {
+    width: 20%;
+    margin: 2rem auto 0;
+  }
+}
+@media (min-width: 1800px) {
+  .contact-button {
+    width: 15%;
+    margin: 2rem auto 0;
   }
 }
 

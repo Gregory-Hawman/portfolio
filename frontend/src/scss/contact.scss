@@ -16,14 +16,13 @@
     }
 }
 
-@include respond(smallPhone){
+@include respond(largeDesktop){
                 
 }
 
 #contact-section {
     padding: 10rem 0 15.5rem;
     background-color: #010b39;
-    height: 100vh;
 
     @include respond(smallPhone){
         padding: 10rem 0 5rem; 
@@ -32,8 +31,15 @@
         padding: 10rem 0 5rem;
     }
     @include respond(tablet){
-        padding: 10rem 0 8rem;   
+        padding: 12rem 0 8rem;   
     }
+    @include respond(desktop){
+        padding: 14rem 0 8rem;      
+    }
+    @include respond(largeDesktop){
+        padding: 18rem 0 8rem;    
+    }
+    
 
     h2 {
         font-size: 3rem;
@@ -52,6 +58,10 @@
             font-size: 2.5rem;
             margin-bottom: 4rem;
         }
+        @include respond(largeDesktop){
+            font-size: 3rem;
+            margin-bottom: 2rem;   
+        }
     }
 }
 
@@ -69,6 +79,13 @@
     }
     @include respond(tablet){
         width: 100%;    
+    }
+    @include respond(desktop){
+        width: 80%;       
+    }
+    @include respond(largeDesktop){
+        font-size: 1.25rem;
+        width: 70%;   
     }
 
     div {
@@ -94,6 +111,9 @@
 
     textarea {
         height: 10rem;
+        @include respond(largeDesktop){
+            height: 15rem;
+        }
     }
 }
 
@@ -102,7 +122,7 @@
     border: 2px solid crimson;
     border-radius: 10px;
     color: crimson;
-    font-size: 20px;
+    font-size: 1.5rem;
     // margin: 1rem 0 0 36rem;
     padding: .5rem 2rem;
 
@@ -121,8 +141,16 @@
         margin: 1rem auto 0;      
     }
     @include respond(tablet){
-        width: 50%;
+        width: 30%;
         margin: 1rem auto 0;  
+    }
+    @include respond(desktop){
+        width: 20%;
+        margin: 2rem auto 0;        
+    }
+    @include respond(largeDesktop){
+        width: 15%;
+        margin: 2rem auto 0; 
     }
 }
 

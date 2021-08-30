@@ -12,11 +12,11 @@
         @media (min-width: 1000px) { @content };
     }
     @if $breakpoint == largeDesktop {
-        @media (min-width: 1800px) { @content };
+        @media (min-width: 1600px) { @content };
     }
 }
 
-@include respond(tablet){
+@include respond(largeDesktop){
                 
 }
 
@@ -37,7 +37,7 @@
     }
 
     .intro {
-        margin: -30rem auto 12rem;
+        margin: -42rem auto 12rem;
         // display: flex;
         justify-content: space-evenly;
 
@@ -45,11 +45,18 @@
             margin: -30rem auto 10rem;   
         }
         @include respond(phone){
-            margin: -35rem auto 10rem;
+            margin: -30rem auto 10rem;
         }
         @include respond(tablet){
             margin: -32rem 0rem 10rem 0;
         }
+        @include respond(desktop){
+            margin: -35rem 0rem 10rem 0;  
+        }
+        @include respond(largeDesktop){
+            margin: -40rem 0rem 10rem 0;
+        }
+
         div {
             display: flex;
             justify-content: space-evenly;
@@ -64,6 +71,7 @@
         .intro-name {
             display: flex;
             justify-content: center;
+
             @include respond(smallPhone){
                 flex-direction: column;   
             }
@@ -80,7 +88,10 @@
                     font-size: 1.5rem;
                 }
                 @include respond(tablet){
-                    font-size: 2.0rem;
+                    font-size: 2rem;
+                }
+                @include respond(desktop){
+                    font-size: 3rem; 
                 }
             }
 
@@ -111,6 +122,10 @@
             }
             @include respond(tablet){
                 font-size: 1.75rem;
+                margin: 1rem 0 1rem;
+            }
+            @include respond(desktop){
+                font-size: 2.5rem;
                 margin: 1rem 0 1rem;
             }
         }
@@ -145,7 +160,14 @@
             }
             @include respond(tablet){
                 font-size: 1.25rem;
-                width: 50%;
+                width: 40%;
+            }
+            @include respond(desktop){
+                font-size: 1.5rem;
+                width: 40%;
+            }
+            @include respond(largeDesktop){
+                width: 25%;
             }
         }
     }

@@ -13,7 +13,7 @@
   height: 100vh !important;
 }
 #intro-section .intro {
-  margin: -30rem auto 12rem;
+  margin: -42rem auto 12rem;
   justify-content: space-evenly;
 }
 @media (max-width: 460px) {
@@ -23,12 +23,22 @@
 }
 @media (min-width: 461px) {
   #intro-section .intro {
-    margin: -35rem auto 10rem;
+    margin: -30rem auto 10rem;
   }
 }
 @media (min-width: 768px) {
   #intro-section .intro {
     margin: -32rem 0rem 10rem 0;
+  }
+}
+@media (min-width: 1000px) {
+  #intro-section .intro {
+    margin: -35rem 0rem 10rem 0;
+  }
+}
+@media (min-width: 1600px) {
+  #intro-section .intro {
+    margin: -40rem 0rem 10rem 0;
   }
 }
 #intro-section .intro div {
@@ -71,6 +81,11 @@
     font-size: 2rem;
   }
 }
+@media (min-width: 1000px) {
+  #intro-section .intro .intro-name h1, #intro-section .intro .intro-name h2 {
+    font-size: 3rem;
+  }
+}
 #intro-section .intro .intro-name h1 {
   color: #fff;
   margin-right: 0.5rem;
@@ -100,6 +115,12 @@
 @media (min-width: 768px) {
   #intro-section .intro p {
     font-size: 1.75rem;
+    margin: 1rem 0 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  #intro-section .intro p {
+    font-size: 2.5rem;
     margin: 1rem 0 1rem;
   }
 }
@@ -135,7 +156,18 @@
 @media (min-width: 768px) {
   #intro-section .intro .intro-button {
     font-size: 1.25rem;
-    width: 50%;
+    width: 40%;
+  }
+}
+@media (min-width: 1000px) {
+  #intro-section .intro .intro-button {
+    font-size: 1.5rem;
+    width: 40%;
+  }
+}
+@media (min-width: 1600px) {
+  #intro-section .intro .intro-button {
+    width: 25%;
   }
 }
 #intro-section .scrolled {
