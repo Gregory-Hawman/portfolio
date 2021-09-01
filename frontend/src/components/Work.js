@@ -7,6 +7,10 @@ import WorkModal from './WorkModal'
 function Projects (props) {
     const [hover, setHover] = useState()
 
+    const onClick = () => {
+        setHover(!hover)
+    }
+
     const onHover = () => {
         setHover(true);
     };
@@ -18,7 +22,7 @@ function Projects (props) {
     const modal = useRef(null)
 
     return (
-        <div className='works' onMouseEnter={onHover} onMouseLeave={onLeave}>
+        <div className='works' onMouseEnter={onHover} onMouseLeave={onLeave} onClick={onClick}>
             <div className='work-img' style={{ 
                 backgroundImage: `url(${props.img})`,                                   
             }}>
