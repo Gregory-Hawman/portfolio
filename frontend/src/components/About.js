@@ -13,7 +13,7 @@ function About () {
                 </div>
                 <div className='about-bio-text'>
                     <h2>
-                        I am a full-stack web developer with a passion for coding well-crafted easy to use websites and apps.
+                        I am a full-stack web developer with a passion for coding well-crafted, easy to use websites and apps.
                     </h2>
                     <p>
                         Hello, welcome to my portfolio. I help people make dreams a reality with clean and easy to use UI that runs at blisteringly speeds.
