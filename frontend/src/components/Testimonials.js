@@ -8,11 +8,11 @@ function Testimonials (props) {
         collapse: false, // default state when component rendered
         collapseText: '... show more', // text to show when collapsed
         expandText: 'show less', // text to show when expanded
-        minHeight: 215, // component height when closed
+        minHeight: 315, // component height when closed
         maxHeight: 500, // expanded to
         textStyle: { // pass the css for the collapseText and expandText here
           color: "white",
-          fontSize: "15px"
+          fontSize: "1rem"
         }
       }
 

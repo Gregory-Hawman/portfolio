@@ -90,7 +90,7 @@
 }
 #test-section .test-text {
   width: 95%;
-  margin: 1rem auto 2rem;
+  margin: 1rem auto 0rem;
   color: #fff;
 }
 @media (max-width: 640px) {
@@ -109,7 +109,7 @@
   }
 }
 #test-section .test-text div {
-  margin: 0 0.5rem 1rem;
+  margin: 0 0.5rem 0.5rem;
 }
 #test-section .test-text div p {
   text-align: left;
@@ -123,11 +123,6 @@
 @media (min-width: 641px) {
   #test-section .test-text div p {
     font-size: 1.3rem;
-  }
-}
-@media (min-width: 1600px) {
-  #test-section .test-text div p {
-    font-size: 1.4rem;
   }
 }
 
