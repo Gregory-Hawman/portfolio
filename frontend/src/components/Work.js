@@ -19,19 +19,24 @@ function Projects (props) {
 
     return (
         <div className='works' onMouseEnter={onHover} onMouseLeave={onLeave}>
-            <img src={props.img} alt={props.name}/>
-            { hover ?
-            <div className='work-hover'>
-                <div className='work-name'>
-                    {props.name}
-                </div>
-                <div className='work-tech'>
-                    {props.tech}
-                </div>
-                <div className='work-button' onClick={() => modal.current.open()}>
-                    More
-                </div>
-            </div> : null }
+            <div className='work-img' style={{ 
+                backgroundImage: `url(${props.img})`,                                   
+            }}>
+                {hover ? 
+                <div className='work-hover'>
+                    <div className='work-name'>
+                        {props.name}
+                    </div>
+                    <div className='work-tech'>
+                        {props.tech}
+                    </div>
+                    <div className='work-button' onClick={() => modal.current.open()}>
+                        More
+                    </div>
+                </div> 
+                : null } 
+            </div>
+            
             <Modal fade ref={modal}>
                 <WorkModal 
                     key={props.index}

@@ -1,158 +1,132 @@
 #test-section {
-  margin: 10rem auto;
-  width: 85%;
+  width: 80%;
+  margin: 4rem auto;
 }
-@media (max-width: 460px) {
-  #test-section {
-    margin: 3rem auto;
-  }
-}
-@media (min-width: 461px) {
-  #test-section {
-    margin: 5rem auto;
-  }
-}
-@media (min-width: 768px) {
-  #test-section {
-    margin: 4rem auto;
-  }
-}
-@media (min-width: 1000px) {
+@media (min-width: 641px) {
   #test-section {
     margin: 6rem auto 8rem;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1100px) {
   #test-section {
-    margin: 10rem auto 12rem;
+    margin: 8rem auto 8rem;
   }
 }
 #test-section h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration: underline;
   text-decoration-thickness: 7.5px;
   margin-bottom: 2rem;
 }
-@media (max-width: 460px) {
-  #test-section h2 {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 461px) {
-  #test-section h2 {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 768px) {
-  #test-section h2 {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 1800px) {
+@media (min-width: 641px) {
   #test-section h2 {
     font-size: 3rem;
   }
 }
-
-.tests {
+@media (min-width: 1600px) {
+  #test-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+}
+#test-section .tests {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 460px) {
-  .tests {
+@media (max-width: 640px) {
+  #test-section .tests {
     flex-direction: column;
   }
 }
-@media (min-width: 461px) {
-  .tests {
-    flex-direction: column;
-  }
-}
-@media (min-width: 768px) {
-  .tests {
+@media (min-width: 641px) {
+  #test-section .tests {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-
-.test-card {
-  margin: 1rem;
+#test-section .test-card {
   padding: 0 0 1rem 0;
   background-color: #010b39;
   border-radius: 30px;
-  width: 25%;
+  width: 100%;
+  margin: 0 auto 1rem;
 }
-@media (max-width: 460px) {
-  .test-card {
-    width: 95%;
-    margin: 0 auto 1rem;
-  }
-}
-@media (min-width: 461px) {
-  .test-card {
-    width: 75%;
-    margin: 0 auto 1rem;
-  }
-}
-@media (min-width: 768px) {
-  .test-card {
+@media (min-width: 641px) {
+  #test-section .test-card {
     width: 45%;
-    margin: 0 auto 1rem;
+    margin: 0 auto 2rem;
   }
 }
-@media (min-width: 1000px) {
-  .test-card {
+@media (min-width: 1100px) {
+  #test-section .test-card {
     width: 30%;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
   }
 }
-@media (min-width: 1800px) {
-  .test-card {
-    width: 25%;
-    margin: 0 auto 1rem;
+@media (min-width: 1600px) {
+  #test-section .test-card {
+    width: 27%;
+    margin: 0 auto;
   }
 }
-
-.test-img {
-  width: 200px;
-  height: 200px;
-  margin: 2rem auto 0;
+#test-section .test-img {
+  width: 13rem;
+  height: 13rem;
 }
-@media (max-width: 460px) {
-  .test-img {
+@media (max-width: 640px) {
+  #test-section .test-img {
     margin: 3.5rem auto 0;
   }
 }
-@media (min-width: 461px) {
-  .test-img {
-    margin: 3.5rem auto 0;
+@media (min-width: 641px) {
+  #test-section .test-img {
+    margin: 3rem auto 0;
   }
 }
-.test-img img {
+#test-section .test-img img {
   border-radius: 30px;
   border: 3px solid white;
 }
-
-.test-text {
+#test-section .test-text {
   width: 95%;
   margin: 1rem auto 2rem;
   color: #fff;
 }
-@media (min-width: 1800px) {
-  .test-text h3 {
+@media (max-width: 640px) {
+  #test-section .test-text h3 {
     font-size: 1.5rem;
   }
 }
-.test-text div {
+@media (min-width: 641px) {
+  #test-section .test-text h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  #test-section .test-text h3 {
+    font-size: 1.5rem;
+  }
+}
+#test-section .test-text div {
   margin: 0 0.5rem 1rem;
 }
-.test-text div p {
+#test-section .test-text div p {
   text-align: left;
   padding: 0 1rem 2rem;
 }
-@media (min-width: 1800px) {
-  .test-text div p {
-    font-size: 1.1rem;
+@media (max-width: 640px) {
+  #test-section .test-text div p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 641px) {
+  #test-section .test-text div p {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1600px) {
+  #test-section .test-text div p {
+    font-size: 1.4rem;
   }
 }
 

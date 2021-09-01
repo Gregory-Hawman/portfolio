@@ -51,6 +51,11 @@
   color: black;
   cursor: pointer;
 }
+@media (max-width: 640px) {
+  .modal-close p {
+    margin-right: 1rem;
+  }
+}
 
 .modal-body {
   z-index: 2;
@@ -60,9 +65,29 @@
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100%;
-  width: 50%;
   display: flex;
   align-items: flex-end;
+  width: 50%;
+}
+@media (max-width: 640px) {
+  .modal-body {
+    width: 100%;
+  }
+}
+@media (min-width: 641px) {
+  .modal-body {
+    width: 90%;
+  }
+}
+@media (min-width: 1100px) {
+  .modal-body {
+    width: 75%;
+  }
+}
+@media (min-width: 1600px) {
+  .modal-body {
+    width: 50%;
+  }
 }
 
 @keyframes fade-in {

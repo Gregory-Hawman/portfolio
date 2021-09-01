@@ -1,3 +1,18 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+      @media (max-width: 640px) { @content };
+  }
+  @if $breakpoint == tablet {
+      @media (min-width: 641px) { @content };
+  }
+  @if $breakpoint == desktop {
+      @media (min-width: 1100px) { @content };
+  }
+  @if $breakpoint == largeDesktop {
+      @media (min-width: 1600px) { @content };
+  }
+}
+
 .modal {
     position: fixed;
     overflow: hidden;
@@ -51,6 +66,10 @@
         color: black;
         cursor: pointer;
       }
+
+      @include respond(phone){
+        margin-right: 1rem;       
+      }
     }
   }
   
@@ -64,9 +83,22 @@
     overflow-x: hidden;
     overflow-y: auto;
     max-height: 100%;
-    width: 50%;
     display: flex;
     align-items: flex-end;
+    width: 50%;
+
+    @include respond(phone){
+      width: 100%;     
+    }
+    @include respond(tablet){
+      width: 90%;         
+    }
+    @include respond(desktop){
+      width: 75%;    
+    }
+    @include respond(largeDesktop){
+      width: 50%;   
+    }
   }
   
   

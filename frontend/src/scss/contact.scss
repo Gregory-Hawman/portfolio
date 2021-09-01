@@ -1,18 +1,15 @@
 @mixin respond($breakpoint) {
-    @if $breakpoint == smallPhone {
-        @media (max-width: 460px) { @content };
-    }
     @if $breakpoint == phone {
-        @media (min-width: 461px) { @content };
+        @media (max-width: 640px) { @content };
     }
     @if $breakpoint == tablet {
-        @media (min-width: 768px) { @content };
+        @media (min-width: 641px) { @content };
     }
     @if $breakpoint == desktop {
-        @media (min-width: 1000px) { @content };
+        @media (min-width: 1100px) { @content };
     }
     @if $breakpoint == largeDesktop {
-        @media (min-width: 1800px) { @content };
+        @media (min-width: 1600px) { @content };
     }
 }
 
@@ -21,15 +18,9 @@
 }
 
 #contact-section {
-    padding: 10rem 0 15.5rem;
+    padding: 5rem 0;
     background-color: #010b39;
 
-    @include respond(smallPhone){
-        padding: 10rem 0 5rem; 
-    }
-    @include respond(phone){
-        padding: 10rem 0 5rem;
-    }
     @include respond(tablet){
         padding: 12rem 0 8rem;   
     }
@@ -39,21 +30,15 @@
     @include respond(largeDesktop){
         padding: 18rem 0 8rem;    
     }
-    
-
+}
     h2 {
-        font-size: 3rem;
         text-decoration: underline;
         text-decoration-thickness: 10px;
         color: #fff;
+
+        font-size: 2.5rem;
         margin-bottom: 2rem;
 
-        @include respond(smallPhone){
-            font-size: 2rem;      
-        }
-        @include respond(phone){
-            font-size: 2rem;
-        }
         @include respond(tablet){
             font-size: 2.5rem;
             margin-bottom: 4rem;
@@ -63,113 +48,108 @@
             margin-bottom: 2rem;   
         }
     }
-}
 
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 0 auto;
-
-    @include respond(smallPhone){
-        width: 100%;
-    }
-    @include respond(phone){
-        width: 100%;
-    }
-    @include respond(tablet){
-        width: 100%;    
-    }
-    @include respond(desktop){
-        width: 80%;       
-    }
-    @include respond(largeDesktop){
-        font-size: 1.25rem;
-        width: 70%;   
-    }
-
-    div {
-        width: 60%;
-        margin: 0 auto;
+    .form {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
 
-        @include respond(smallPhone){
-            width: 80%;
-        }
         @include respond(phone){
-            width: 80%;
+            font-size: 1.1rem;     
         }
         @include respond(tablet){
-            width: 65%;    
+            font-size: 1.25rem;
+            width: 100%;    
         }
-    }
-
-    input {
-        height: 3rem;
-    }
-
-    textarea {
-        height: 10rem;
+        @include respond(desktop){
+            width: 80%;       
+        }
         @include respond(largeDesktop){
-            height: 15rem;
+            font-size: 1.25rem;
+            width: 70%;   
+        }
+
+        div {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            @include respond(tablet){
+                width: 65%;    
+            }
+        }
+
+        input {
+            height: 3rem;
+        }
+
+        textarea {
+            height: 10rem;
+            @include respond(largeDesktop){
+                height: 15rem;
+            }
         }
     }
-}
 
-.contact-button {
-    background-color: #010b39;
-    border: 2px solid crimson;
-    border-radius: 10px;
-    color: crimson;
-    font-size: 1.5rem;
-    // margin: 1rem 0 0 36rem;
-    padding: .5rem 2rem;
+    .contact-button {
+        background-color: #010b39;
+        border: 2px solid crimson;
+        border-radius: 10px;
+        color: crimson;
+        font-size: 1.5rem;
+        padding: .5rem 2rem;
 
-    &:hover {
-        color:#fff;
-        background-color: crimson;
-        cursor: pointer;
+        &:hover {
+            color:#fff;
+            background-color: crimson;
+            cursor: pointer;
+        }
+
+        @include respond(phone){
+            width: 50%;
+            margin: 2rem auto 0;      
+        }
+        @include respond(tablet){
+            width: 30%;
+            margin: 1rem auto 0;  
+        }
+        @include respond(desktop){
+            width: 20%;
+            margin: 2rem auto 0;        
+        }
+        @include respond(largeDesktop){
+            width: 15%;
+            margin: 2rem auto 0; 
+        }
     }
 
-    @include respond(smallPhone){
-        width: 50%;
-        margin: 1rem auto 0;      
-    }
-    @include respond(phone){
-        width: 50%;
-        margin: 1rem auto 0;      
-    }
-    @include respond(tablet){
-        width: 30%;
-        margin: 1rem auto 0;  
-    }
-    @include respond(desktop){
-        width: 20%;
-        margin: 2rem auto 0;        
-    }
-    @include respond(largeDesktop){
-        width: 15%;
-        margin: 2rem auto 0; 
-    }
-}
+    #contact-section-success {
+        padding: 5rem 0 10rem;
+        background-color: #010b39;
 
-#contact-section-success {
-    padding: 8rem 0 10rem;
-    background-color: #010b39;
+        @include respond(tablet){
+            padding: 12rem 0 13rem;   
+        }
+        @include respond(desktop){
+            padding: 14rem 0 13rem;      
+        }
+        @include respond(largeDesktop){
+            padding: 18rem 0 13rem;    
+        }
+    }
 
-    h2 {
-        font-size: 40px;
-        text-decoration: underline;
-        text-decoration-thickness: 10px;
+
+    .contact-success {
         color: #fff;
-        margin-bottom: 2rem;
+        font-size: 2rem;
+        margin: 3rem 0 0;
+
+        @include respond(phone){
+            font-size: 1.4rem;   
+        }
+        @include respond(tablet){
+            font-size: 2rem;
+        }
     }
-}
-
-
-.contact-success {
-    color: #fff;
-    font-size: 30px;
-    margin: 3rem 0 0;
-}

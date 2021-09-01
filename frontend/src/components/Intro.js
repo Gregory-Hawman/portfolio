@@ -34,8 +34,8 @@ function Intro () {
         <Element id='intro-section' name='intro-section' className={introClasses.join(' ')} >
             <div className='particle-div'>
                 <Particles params={particlesConfig} />
-                    <div className='intro'>
-                    <div className='intro-name'>
+                <div className='intro'>
+                    <div className='intro-text'>
                         <h1>Hello, I'm </h1>
                         <h2>Gregory Hawman</h2>
                     </div>

@@ -1,23 +1,65 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 640px) { @content };
+    }
+    @if $breakpoint == tablet {
+        @media (min-width: 641px) { @content };
+    }
+    @if $breakpoint == desktop {
+        @media (min-width: 1100px) { @content };
+    }
+    @if $breakpoint == largeDesktop {
+        @media (min-width: 1600px) { @content };
+    }
+}
+
 .work-modal {
     .modal-img {
         width: 100%;
         border-bottom: 3px solid grey;
+
+        @include respond(phone){
+            width: 95%;
+            margin: 0 0 0 -.5rem;   
+        }
     }
 
     .modal-text {
         margin: .5rem 4rem 2rem 2rem;
     }
 
+    h1 {
+        font-size: 2rem;
+
+        @include respond(phone){
+            font-size: 1.5rem;      
+        }
+    }
+
     h2 {
         text-transform: uppercase;
         color: slategray;
-        font-size: 20px;
+
+
+        font-size: 1.3rem;
         margin: 0 0 1rem;
+
+        @include respond(phone){
+            font-size: 1rem;      
+        }
     }
 
     p {
         border-top: 1px solid slategray;
         padding: 1rem 0rem;
+
+        @include respond(phone){
+            font-size: 1.1rem;
+            margin-right: .25rem;
+        }
+        @include respond(tablet){
+            font-size: 1.25rem;
+        }
     }
 
     .modal-button {
@@ -25,14 +67,24 @@
         border: 2px solid crimson;
         color: white;
         justify-content: center;
-        font-size: 16px;
+        
         font-weight: bold;
-        width: 15%;
         margin: 0 auto;
         padding: .5rem;
         border-radius: 10px;
         background-color: crimson;
+
+        width: 40%;
+        font-size: 1rem;  
     
+        @include respond(tablet){
+            width: 25%; 
+            font-size: 1.25rem;      
+        }
+        @include respond(desktop){
+            width: 20%; 
+        }
+
         &:hover {
             color: crimson;
             background-color: white;

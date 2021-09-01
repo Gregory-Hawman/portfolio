@@ -1,23 +1,16 @@
 @mixin respond($breakpoint) {
-    @if $breakpoint == smallPhone {
-        @media (max-width: 460px) { @content };
-    }
     @if $breakpoint == phone {
-        @media (min-width: 461px) { @content };
+        @media (max-width: 640px) { @content };
     }
     @if $breakpoint == tablet {
-        @media (min-width: 768px) { @content };
+        @media (min-width: 641px) { @content };
     }
     @if $breakpoint == desktop {
-        @media (min-width: 1000px) { @content };
+        @media (min-width: 1100px) { @content };
     }
     @if $breakpoint == largeDesktop {
         @media (min-width: 1600px) { @content };
     }
-}
-
-@include respond(largeDesktop){
-                
 }
 
 #intro-section {
@@ -37,58 +30,37 @@
     }
 
     .intro {
-        margin: -42rem auto 12rem;
-        // display: flex;
+        margin: -32rem auto 10rem;
         justify-content: space-evenly;
 
-        @include respond(smallPhone){
-            margin: -30rem auto 10rem;   
-        }
-        @include respond(phone){
-            margin: -30rem auto 10rem;
-        }
         @include respond(tablet){
-            margin: -32rem 0rem 10rem 0;
+            margin: -45rem auto 10rem;
         }
         @include respond(desktop){
-            margin: -35rem 0rem 10rem 0;  
+            margin: -35rem auto 10rem;  
         }
         @include respond(largeDesktop){
-            margin: -40rem 0rem 10rem 0;
+            margin: -40rem auto 10rem;
         }
 
         div {
             display: flex;
             justify-content: space-evenly;
-            width: 70%;
+            width: 100%;
             margin: 0 auto;
-
-            @include respond(smallPhone){
-                width: 100%;
-            }
         }
 
-        .intro-name {
+        .intro-text {
             display: flex;
             justify-content: center;
 
-            @include respond(smallPhone){
-                flex-direction: column;   
-            }
-
             h1, h2 {
-                font-size: 3rem;
+                font-size: 1.6rem;
                 font-weight: 600;
                 z-index: 1000;
 
-                @include respond(smallPhone){
-                    font-size: 1.5rem;   
-                }
-                @include respond(phone){
-                    font-size: 1.5rem;
-                }
                 @include respond(tablet){
-                    font-size: 2rem;
+                    font-size: 2.25rem;
                 }
                 @include respond(desktop){
                     font-size: 3rem; 
@@ -98,47 +70,44 @@
             h1 {
                 color: #fff;
                 margin-right: .5rem;
+
+                @include respond(tablet){
+                    margin-right: .75rem;
+                }
+                @include respond(desktop){
+                    margin-right: 1rem; 
+                }
             }
         
             h2 {
                 color: crimson;
             }
-        }
-    
-        p {
-            color: #fff;
-            font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            z-index: 1000;
 
-            @include respond(smallPhone){
-                font-size: 1.25rem;  
-                margin: .5rem 0 1rem; 
-            }
-            @include respond(phone){
+            p {
+                color: #fff;
                 font-size: 1.4rem;
+                font-weight: 600;
                 margin: 1rem 0 1rem;
-            }
-            @include respond(tablet){
-                font-size: 1.75rem;
-                margin: 1rem 0 1rem;
-            }
-            @include respond(desktop){
-                font-size: 2.5rem;
-                margin: 1rem 0 1rem;
+                z-index: 1000;
+    
+                @include respond(tablet){
+                    font-size: 2rem;
+                    margin: 1rem 0 1rem;
+                }
+                @include respond(desktop){
+                    font-size: 2.5rem;
+                    margin: 1rem 0 1rem;
+                }
             }
         }
 
-        
-        
         .intro-button {
             border: 2px solid crimson;
             color: crimson;
             justify-content: center;
-            font-size: 1.3rem;
+            font-size: 1rem;
             font-weight: 700;
-            width: 30%;
+            width: 50%;
             margin: 1rem auto 0;
             padding: .5rem 1.5rem;
             border-radius: 10px;
@@ -150,24 +119,16 @@
                 cursor: pointer;
             }
 
-            @include respond(smallPhone){
-                font-size: 1rem;
-                width: 60%;
-            }
-            @include respond(phone){
-                font-size: 1rem;
-                width: 60%;
-            }
             @include respond(tablet){
                 font-size: 1.25rem;
-                width: 40%;
+                width: 30%;
             }
             @include respond(desktop){
                 font-size: 1.5rem;
-                width: 40%;
+                width: 22%;
             }
             @include respond(largeDesktop){
-                width: 25%;
+                width: 16%;
             }
         }
     }

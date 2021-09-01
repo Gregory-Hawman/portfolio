@@ -13,113 +13,81 @@
   height: 100vh !important;
 }
 #intro-section .intro {
-  margin: -42rem auto 12rem;
+  margin: -32rem auto 10rem;
   justify-content: space-evenly;
 }
-@media (max-width: 460px) {
+@media (min-width: 641px) {
   #intro-section .intro {
-    margin: -30rem auto 10rem;
+    margin: -45rem auto 10rem;
   }
 }
-@media (min-width: 461px) {
+@media (min-width: 1100px) {
   #intro-section .intro {
-    margin: -30rem auto 10rem;
-  }
-}
-@media (min-width: 768px) {
-  #intro-section .intro {
-    margin: -32rem 0rem 10rem 0;
-  }
-}
-@media (min-width: 1000px) {
-  #intro-section .intro {
-    margin: -35rem 0rem 10rem 0;
+    margin: -35rem auto 10rem;
   }
 }
 @media (min-width: 1600px) {
   #intro-section .intro {
-    margin: -40rem 0rem 10rem 0;
+    margin: -40rem auto 10rem;
   }
 }
 #intro-section .intro div {
   display: flex;
   justify-content: space-evenly;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 460px) {
-  #intro-section .intro div {
-    width: 100%;
-  }
-}
-#intro-section .intro .intro-name {
+#intro-section .intro .intro-text {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 460px) {
-  #intro-section .intro .intro-name {
-    flex-direction: column;
-  }
-}
-#intro-section .intro .intro-name h1, #intro-section .intro .intro-name h2 {
-  font-size: 3rem;
+#intro-section .intro .intro-text h1, #intro-section .intro .intro-text h2 {
+  font-size: 1.6rem;
   font-weight: 600;
   z-index: 1000;
 }
-@media (max-width: 460px) {
-  #intro-section .intro .intro-name h1, #intro-section .intro .intro-name h2 {
-    font-size: 1.5rem;
+@media (min-width: 641px) {
+  #intro-section .intro .intro-text h1, #intro-section .intro .intro-text h2 {
+    font-size: 2.25rem;
   }
 }
-@media (min-width: 461px) {
-  #intro-section .intro .intro-name h1, #intro-section .intro .intro-name h2 {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 768px) {
-  #intro-section .intro .intro-name h1, #intro-section .intro .intro-name h2 {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1000px) {
-  #intro-section .intro .intro-name h1, #intro-section .intro .intro-name h2 {
+@media (min-width: 1100px) {
+  #intro-section .intro .intro-text h1, #intro-section .intro .intro-text h2 {
     font-size: 3rem;
   }
 }
-#intro-section .intro .intro-name h1 {
+#intro-section .intro .intro-text h1 {
   color: #fff;
   margin-right: 0.5rem;
 }
-#intro-section .intro .intro-name h2 {
+@media (min-width: 641px) {
+  #intro-section .intro .intro-text h1 {
+    margin-right: 0.75rem;
+  }
+}
+@media (min-width: 1100px) {
+  #intro-section .intro .intro-text h1 {
+    margin-right: 1rem;
+  }
+}
+#intro-section .intro .intro-text h2 {
   color: crimson;
 }
-#intro-section .intro p {
+#intro-section .intro .intro-text p {
   color: #fff;
-  font-size: 3rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin: 1rem 0 1rem;
   z-index: 1000;
 }
-@media (max-width: 460px) {
-  #intro-section .intro p {
-    font-size: 1.25rem;
-    margin: 0.5rem 0 1rem;
-  }
-}
-@media (min-width: 461px) {
-  #intro-section .intro p {
-    font-size: 1.4rem;
+@media (min-width: 641px) {
+  #intro-section .intro .intro-text p {
+    font-size: 2rem;
     margin: 1rem 0 1rem;
   }
 }
-@media (min-width: 768px) {
-  #intro-section .intro p {
-    font-size: 1.75rem;
-    margin: 1rem 0 1rem;
-  }
-}
-@media (min-width: 1000px) {
-  #intro-section .intro p {
+@media (min-width: 1100px) {
+  #intro-section .intro .intro-text p {
     font-size: 2.5rem;
     margin: 1rem 0 1rem;
   }
@@ -128,9 +96,9 @@
   border: 2px solid crimson;
   color: crimson;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
-  width: 30%;
+  width: 50%;
   margin: 1rem auto 0;
   padding: 0.5rem 1.5rem;
   border-radius: 10px;
@@ -141,33 +109,21 @@
   background-color: crimson;
   cursor: pointer;
 }
-@media (max-width: 460px) {
-  #intro-section .intro .intro-button {
-    font-size: 1rem;
-    width: 60%;
-  }
-}
-@media (min-width: 461px) {
-  #intro-section .intro .intro-button {
-    font-size: 1rem;
-    width: 60%;
-  }
-}
-@media (min-width: 768px) {
+@media (min-width: 641px) {
   #intro-section .intro .intro-button {
     font-size: 1.25rem;
-    width: 40%;
+    width: 30%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   #intro-section .intro .intro-button {
     font-size: 1.5rem;
-    width: 40%;
+    width: 22%;
   }
 }
 @media (min-width: 1600px) {
   #intro-section .intro .intro-button {
-    width: 25%;
+    width: 16%;
   }
 }
 #intro-section .scrolled {

@@ -1,43 +1,27 @@
 @mixin respond($breakpoint) {
-  @if $breakpoint == smallPhone {
-      @media (max-width: 460px) { @content };
-  }
   @if $breakpoint == phone {
-      @media (min-width: 461px) { @content };
+      @media (max-width: 640px) { @content };
   }
   @if $breakpoint == tablet {
-      @media (min-width: 768px) { @content };
+      @media (min-width: 641px) { @content };
   }
   @if $breakpoint == desktop {
-      @media (min-width: 1000px) { @content };
+      @media (min-width: 1100px) { @content };
   }
   @if $breakpoint == largeDesktop {
-      @media (min-width: 1800px) { @content };
+      @media (min-width: 1600px) { @content };
   }
-}
-
-@include respond(desktop){
-              
 }
 
 #work-section {
-  padding: 7rem 0;
+  padding: 5rem 0;
   background-color: #010b39;
 
-  @include respond(smallPhone){
-    padding: 4rem 0;    
-  }
-  @include respond(phone){
-    padding: 4rem 0;
-  }
   @include respond(tablet){
-    padding: 4rem 0;      
-  }
-  @include respond(desktop){
     padding: 6rem 0;      
   }
-  @include respond(largeDesktop){
-    padding: 10rem 0;  
+  @include respond(desktop){
+    padding: 8rem 0;      
   }
 
   h2 {
@@ -48,132 +32,160 @@
     text-decoration-thickness:10px;
     margin-bottom: 2rem;
 
-    @include respond(largeDesktop){
+    @include respond(tablet){
       font-size: 3rem; 
+      margin-bottom: 4rem;
+    }
+    @include respond(desktop){
+      font-size: 3.5rem; 
+      margin-bottom: 3rem;
     }
   }
-}
 
-.work-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 90%;
-  margin: 0 auto;
-
-  @include respond(smallPhone){
-    flex-direction: column;
-    align-items: center;    
-  }
-  @include respond(phone){
-    flex-direction: column;
-    align-items: center;     
-  }
-  @include respond(tablet){
-    flex-direction: column;
-    align-items: center;         
-  }
-  @include respond(desktop){
-    flex-direction: row;     
-  }
-}
-
-.works {
-  width: 100%;
-  border-radius: 15px;
-  margin: .3rem;
-
-  @include respond(smallPhone){
-    width: 90%;
-    margin: 0 0 2rem;    
-  }
-  @include respond(phone){
+  .work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 80%;
-    margin: 0 0 1rem;       
-  }
-  @include respond(tablet){
-    width: 90%;
-    margin: 0 0 2rem;        
-  }
-  @include respond(desktop){
-    width: 40%;
-    margin: 2rem;     
-  }
-  @include respond(largeDesktop){
-    width: 33%;
-    margin: 2rem 0;
-  }
+    margin: 0 auto;
 
-  img {
-    max-width: 50rem;
-    border-radius: 11px;
-    overflow: hidden;
-
-    @include respond(smallPhone){
-      width: 100%;   
-    }
     @include respond(phone){
-      width: 100%;
-      margin: 0rem 0 1rem;       
+      flex-direction: column;
+      align-items: center;     
     }
     @include respond(tablet){
-      max-width: 30rem;
-      margin: 0 auto; 
+      flex-direction: column;
+      align-items: center;         
+    }
+    @include respond(desktop){
+      flex-direction: row;     
     }
   }
 
-  .work-hover {
-    background-color: rgb(0, 0, 0);
-    opacity: .85;
-    color: white;
-    border-radius: 10px;
-    animation: fadeIn .3s;
-    @keyframes fadeIn {
-      0% {opacity: 0;}
-      100% {opacity: .85;}
-    }
-
-    padding: 23% 0;
+  .works {
     width: 100%;
-    margin: -19rem 0 0;
-  
+    display: flex;
+    justify-content: center;
+
     @include respond(phone){
-      padding: 24.5% 0;
-      max-width: 20rem;
-      margin: -20.76rem 0 0;
+      margin: 0 0 3rem;       
+    }
+    @include respond(tablet){
+      margin: 0 0 3rem;        
+    }
+    @include respond(desktop){
+      width: 45%;
+      margin: 1.5rem 1.5rem;    
+    }
+    @include respond(largeDesktop){
+      width: 33%;
+      margin: 2rem 1rem;
     }
 
-    .work-name {
-      margin: 1rem 0 0;
-      font-size: 25px;
-      font-weight: bolder;
+    .work-img {
+      width: 30rem;
+      height: 30rem;
+
+      border-radius: 15px;
+    
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @include respond(phone){
+        width: 20rem;
+        height: 20rem;
+      }
     }
 
-    .work-tech {
-      margin: 2.5% 0 1rem;
-      color: crimson;
-      font-size: 20px;
-      font-weight: bolder;
-    }
-
-
-    .work-button {
-      text-transform: uppercase;
-      border: 3px solid crimson;
-      color: crimson;
+    .work-hover {
+      background-color: rgb(0, 0, 0);
+      opacity: .85;
+      color: white;
+      border-radius: 15px;
+      animation: fadeIn .3s;
+      @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: .85;}
+      }
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-      font-size: 15px;
-      font-weight: 700;
-      width: 30%;
-      margin: 10% auto 0;
-      padding: .5rem 1rem;
-      border-radius: 10px;
-  
-      &:hover {
-          color: #fff;
-          background-color: crimson;
-          cursor: pointer;
-          transition: .3s;
+      align-items: center;
+
+      width: 100%;
+      padding: 5rem .1rem;
+
+      @include respond(tablet){
+        padding: 8.9rem .1rem;
+      }
+      @include respond(desktop){
+        padding: 8.5rem .1rem;
+      }
+
+      .work-name {
+        align-items: center;
+        font-weight: bolder;
+
+        font-size: 1.5rem;
+        margin-top: 2rem;
+
+        @include respond(tablet){
+          font-size: 2.5rem;
+          margin-top: .5rem;
+        }
+        @include respond(desktop){
+          font-size: 2.5rem;
+          margin-top: .5rem;
+        }
+      }
+
+      .work-tech {
+        color: crimson;
+        font-weight: bolder;
+
+        font-size: 1.2rem;
+        margin: .25rem 0 1rem;
+
+        @include respond(tablet){
+          font-size: 1.5rem;
+          margin: .5rem 0 2rem;
+        }
+        @include respond(desktop){
+          font-size: 1.75rem;
+          margin: .5rem 0 2rem;
+        }
+      }
+
+      .work-button {
+        text-transform: uppercase;
+        border: 3px solid crimson;
+        border-radius: 10px;
+        color: crimson;
+        justify-content: center;
+        font-weight: 700;
+        width: 30%;
+        
+        padding: .5rem 1rem;
+    
+        &:hover {
+            color: #fff;
+            background-color: crimson;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        font-size: 1rem;
+        margin: 0 auto 0;
+
+        @include respond(tablet){
+          font-size: 1.25rem;
+          margin: 0 auto 0;
+        }
+        @include respond(desktop){
+          font-size: 1.5rem;
+          margin: 0 auto 0;
+        }
       }
     }
   }
