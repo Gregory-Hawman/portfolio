@@ -49,7 +49,7 @@
             width: 100%;
             margin: 0 auto;
         }
-
+     
         .intro-text {
             display: flex;
             justify-content: center;
@@ -58,7 +58,11 @@
                 font-size: 1.6rem;
                 font-weight: 600;
                 z-index: 1000;
+                margin: 0 0 1rem;
 
+                @include respond(phone){
+                    margin: 0 0 0rem;
+                }
                 @include respond(tablet){
                     font-size: 2.25rem;
                 }
@@ -81,6 +85,9 @@
         
             h2 {
                 color: crimson;
+                text-decoration: underline;
+                text-decoration-line: 4px;
+                text-underline-offset: .3rem;
             }
 
             p {
@@ -89,14 +96,14 @@
                 font-weight: 600;
                 margin: 1rem 0 1rem;
                 z-index: 1000;
-    
+
                 @include respond(tablet){
                     font-size: 2rem;
-                    margin: 1rem 0 1rem;
+                    margin: 0rem 0 1rem;
                 }
                 @include respond(desktop){
                     font-size: 2.5rem;
-                    margin: 1rem 0 1rem;
+                    margin: 0rem 0 1rem;
                 }
             }
         }
@@ -132,7 +139,7 @@
             }
         }
     }
-    
+
     .scrolled {
         margin-bottom: 15rem;
     }

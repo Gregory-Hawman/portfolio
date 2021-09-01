@@ -40,7 +40,7 @@ function Intro () {
                         <h2>Gregory Hawman</h2>
                     </div>
                     
-                    <div>
+                    <div className='intro-text'>
                         <p>I'm a Full-Stack Web Developer</p>
                     </div>
                     
