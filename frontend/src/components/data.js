@@ -31,7 +31,7 @@ export const projectData = [
         name: 'BRIDGEGOOD',
         detail: `A reservation app where users can reserve a space at the BRIDGEGOOD Creative Studio to come in and study and or work as a designer. I created the Front-end using react and redux to make the reservation page, the back-end using Node.js to store the data to make a reservation, and tested the code with Jest.`,
         img: bgImg,
-        link: 'https://www.bridgegood.com/',
+        link: 'https://www.bridgegood.com/reservation',
         modalImg: bgImgBig,
         tag: '',
         tech: 'React | Redux | Node.js', 

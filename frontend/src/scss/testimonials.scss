@@ -14,7 +14,7 @@
 }
 
 #test-section {
-    width: 80%;
+    width: 70%;
     margin: 4rem auto;
     
     @include respond(tablet){
@@ -35,7 +35,7 @@
             font-size: 3rem; 
         }
         @include respond(desktop){
-            font-size: 3.5rem; 
+            font-size: 3rem; 
             margin-bottom: 3rem;     
         }
     }

@@ -20,7 +20,7 @@
 #about-section .about-bio {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   align-items: center;
 }
@@ -38,6 +38,7 @@
 @media (min-width: 1100px) {
   #about-section .about-bio {
     flex-direction: row;
+    width: 65%;
   }
 }
 #about-section .about-bio .about-img img {
@@ -56,7 +57,7 @@
 }
 @media (min-width: 1600px) {
   #about-section .about-bio .about-img {
-    width: 40%;
+    width: 35%;
   }
 }
 #about-section .about-bio .about-bio-text {
@@ -114,7 +115,7 @@
   }
 }
 #about-section .about-skills {
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
