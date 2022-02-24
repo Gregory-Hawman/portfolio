@@ -51,6 +51,7 @@
     display: flex;
     margin: 0 0 0 1rem;
     font-size: 1rem;
+    color: black;
     @include respond(tablet){
         font-size: 1.25rem;         
     }

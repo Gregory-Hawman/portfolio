@@ -1,6 +1,7 @@
 #about-section {
   margin: 4rem auto;
   width: 100%;
+  background-color: white;
 }
 @media (min-width: 641px) {
   #about-section {
@@ -93,6 +94,7 @@
   }
 }
 #about-section .about-bio .about-bio-text p {
+  color: black;
   font-size: 1.15rem;
   text-align: center;
   margin: 1rem auto 0;
@@ -125,6 +127,7 @@
 #about-section .about-skills h3 {
   font-size: 1.25rem;
   margin-bottom: 0;
+  color: black;
 }
 @media (max-width: 640px) {
   #about-section .about-skills h3 {
@@ -196,6 +199,7 @@
 }
 #about-section .about-skills .about-div .about-skill-name {
   font-size: 1.3rem;
+  color: black;
 }
 @media (min-width: 641px) {
   #about-section .about-skills .about-div .about-skill-name {
