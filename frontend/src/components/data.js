@@ -10,7 +10,9 @@ import bgImg from '../images/projects/bridgegood-small.jpg'
 import bgImgBig from '../images/projects/bridgegood-big.jpg'
 import golImg from '../images/projects/gol-small.jpg'
 import golImgBig from '../images/projects//gol-big.jpg'
-import bblsImg from '../images/projects/bubblesImg.png'
+// import bblsImg from '../images/projects/bubblesImg.png'
+import discSm from '../images/projects/discordSm.jpg'
+import discBig from '../images/projects/discordBig.jpg'
 
 import iraPic from '../images/ira-pic.jpg'
 import justinPic from '../images/justin-pic.jpg'
@@ -44,6 +46,15 @@ export const projectData = [
         modalImg: golImgBig,
         tag: 'a cellular automaton game',
         tech: 'JavaScript | React',
+    },
+    {
+        name: 'Discord Clone',
+        detail: 'Made a Discord page to practice Tailwindcss',
+        img: discSm,
+        link: 'https://discord-clone-eosin.vercel.app/',
+        modalImg: discBig,
+        tag: 'Tailwindcss v3.0 practice',
+        tech: 'React | Tailwindcss ',
     },
     // {
     //     name: 'Bubbles',

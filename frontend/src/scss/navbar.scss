@@ -1,23 +1,16 @@
 @mixin respond($breakpoint) {
-    @if $breakpoint == smallPhone {
-        @media (max-width: 460px) { @content };
-    }
     @if $breakpoint == phone {
-        @media (min-width: 461px) { @content };
+        @media (max-width: 640px) { @content };
     }
     @if $breakpoint == tablet {
-        @media (min-width: 768px) { @content };
+        @media (min-width: 641px) { @content };
     }
     @if $breakpoint == desktop {
-        @media (min-width: 1000px) { @content };
+        @media (min-width: 1100px) { @content };
     }
     @if $breakpoint == largeDesktop {
-        @media (min-width: 1800px) { @content };
+        @media (min-width: 1600px) { @content };
     }
-}
-
-@include respond(largeDesktop){
-                
 }
 
 .navbar {
@@ -57,35 +50,20 @@
 .nav-links {
     display: flex;
     margin: 0 0 0 1rem;
-    font-size: 1.3rem;
-
-    @include respond(smallPhone){
-        font-size: 1rem;
-        margin: 0 0 0 .25rem;
-    }
-    @include respond(phone){
-        font-size: 1rem;
-    }
+    font-size: 1rem;
     @include respond(tablet){
         font-size: 1.25rem;         
     }
-    @include respond(desktop){
+    @include respond(largeDesktop){
         font-size: 1.5rem;       
     }
 
     div {
-        padding: 0 1rem;
+        padding: 0 .3rem;
 
         &:hover {
             color: crimson;
             cursor: pointer;
-        }
-
-        @include respond(smallPhone){
-            padding: 0 .3rem;  
-        }
-        @include respond(phone){
-            padding: 0 .3rem;
         }
         @include respond(tablet){
             padding: 0 .5rem;        
@@ -100,32 +78,16 @@
     display: flex;
     margin: 0 1rem 0;
 
-    @include respond(desktop){
-        margin: 0 1rem 0;       
-    }
-
     img {
         width: 2rem;
         min-width: 1rem;
-
-        @include respond(desktop){
-            width: 3rem;
-            min-width: 2rem;       
-        }
     }
 
     a {
         margin: 0 .25rem;
 
-        @include respond(smallPhone){
-            margin: 0 .1rem;
-        }
         @include respond(desktop){
             margin: 0 .5rem;       
         }
-    }
-
-    @include respond(smallPhone){
-        margin: 0 .25rem 0 .25rem; 
     }
 }

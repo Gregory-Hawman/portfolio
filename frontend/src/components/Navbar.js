@@ -9,7 +9,7 @@ import '../css/navbar.css';
 
 function Navbar () {
     const Link = Scroll.Link
-    const { height, width } = useWindowDimensions();
+    const { height } = useWindowDimensions();
 
     // ANIMATED INSTEAD OF FIXED NAVBAR SCROLL
     const [scrolled, setScrolled] = useState(false)
