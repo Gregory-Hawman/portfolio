@@ -11,10 +11,10 @@ import bgImgBig from '../images/projects/bridgegood-big.jpg';
 import golImg from '../images/projects/gol-small.jpg';
 import golImgBig from '../images/projects//gol-big.jpg';
 // import bblsImg from '../images/projects/bubblesImg.png'
-import discSm from '../images/projects/dis-small';
-import discBig from '../images/projects/dis-big';
+import discSm from '../images/projects/dis-small.jpg';
+import discBig from '../images/projects/dis-big.jpg';
 import tsTodoSm from '../images/projects/ts-todo-small.jpg';
-import tsTodoBig from '../images/projects/ts-todo-big.jpg'
+import tsTodoBig from '../images/projects/ts-todo-big.jpg';
 
 import iraPic from '../images/ira-pic.jpg';
 import justinPic from '../images/justin-pic.jpg';
