@@ -1,22 +1,24 @@
-import javascriptIcon from '../images/logos/javascript.svg'
-import reactIcon from '../images/logos/react.svg'
-import reduxIcon from '../images/logos/redux.svg'
-import html5Icon from '../images/logos/html5icon.svg'
-import cssIcon from '../images/logos/css3.svg'
-import pythonIcon from '../images/logos/python.svg'
-import nodejsIcon from '../images/logos/Node.js_logo.svg'
+import javascriptIcon from '../images/logos/javascript.svg';
+import reactIcon from '../images/logos/react.svg';
+import reduxIcon from '../images/logos/redux.svg';
+import html5Icon from '../images/logos/html5icon.svg';
+import cssIcon from '../images/logos/css3.svg';
+import pythonIcon from '../images/logos/python.svg';
+import nodejsIcon from '../images/logos/Node.js_logo.svg';
 
-import bgImg from '../images/projects/bridgegood-small.jpg'
-import bgImgBig from '../images/projects/bridgegood-big.jpg'
-import golImg from '../images/projects/gol-small.jpg'
-import golImgBig from '../images/projects//gol-big.jpg'
+import bgImg from '../images/projects/bridgegood-small.jpg';
+import bgImgBig from '../images/projects/bridgegood-big.jpg';
+import golImg from '../images/projects/gol-small.jpg';
+import golImgBig from '../images/projects//gol-big.jpg';
 // import bblsImg from '../images/projects/bubblesImg.png'
-import discSm from '../images/projects/discordSm.jpg'
-import discBig from '../images/projects/discordBig.jpg'
+import discSm from '../images/projects/dis-small';
+import discBig from '../images/projects/dis-big';
+import tsTodoSm from '../images/projects/ts-todo-small.jpg';
+import tsTodoBig from '../images/projects/ts-todo-big.jpg'
 
-import iraPic from '../images/ira-pic.jpg'
-import justinPic from '../images/justin-pic.jpg'
-import alexPic from '../images/alex-pic.jpg'
+import iraPic from '../images/ira-pic.jpg';
+import justinPic from '../images/justin-pic.jpg';
+import alexPic from '../images/alex-pic.jpg';
 
 export const skillsData = [
     { name: 'JavaScript', icon: javascriptIcon },
@@ -55,6 +57,15 @@ export const projectData = [
         modalImg: discBig,
         tag: 'Tailwindcss v3.0 practice',
         tech: 'React | Tailwindcss ',
+    },
+    {
+        name: 'Typescript Todo',
+        detail: 'Used Typescript to make a Todo app with react',
+        img: tsTodoSm,
+        link: 'https://react-typescript-todo-dnd.vercel.app/',
+        modalImg: tsTodoBig,
+        tag: 'Typescript with React',
+        tech: 'Typescript | React',
     },
     // {
     //     name: 'Bubbles',
