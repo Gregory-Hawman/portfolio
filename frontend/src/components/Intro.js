@@ -41,12 +41,12 @@ function Intro () {
                     </div>
                     
                     <div className='intro-text'>
-                        <p>I'm a Full-Stack Web Developer</p>
+                        <p>I'm a Web Developer</p>
                     </div>
                     
                     <div>
                         <Link
-                        to="about-section"
+                        to="work-section"
                         spy={true}
                         smooth={true}
                         offset={-125}

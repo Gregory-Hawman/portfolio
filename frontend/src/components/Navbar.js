@@ -3,7 +3,7 @@ import * as Scroll from 'react-scroll';
 // import myLogo from '../images/Logo.png'
 import github from '../images/logos/github.svg'
 import linkedin from '../images/logos/linkedin.svg'
-import useWindowDimensions from '../hooks/useWindowDemensions';
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
 import '../css/navbar.css';
 

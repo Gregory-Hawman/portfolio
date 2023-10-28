@@ -9,23 +9,21 @@ function About () {
         <Element id='about-section' name='about-section'>
             <div className='about-bio'>
                 <div className='about-img'>
-                    <img alt='profile pic' src={profile}/>
+                    <img alt='profile picture' src={profile}/>
                 </div>
                 <div className='about-bio-text'>
                     <h2>
-                        I am a full-stack web developer with a passion for coding well-crafted, easy to use websites and apps.
+                        I am a web developer with a passion for coding well-crafted, accessible, and responsive, user experiences.
                     </h2>
                     <p>
-                        Hello, welcome to my portfolio. I help people make dreams a reality with clean and easy to use UI that runs at blisteringly speeds.
-                        <br/>
-                        I graduated from DePaul University in Chicago where I honed an creative eye for detail with a degree in Digital Media/Communications. At Lambda School I learned the skills to turn those ideas into reality with code. 
+                        I graduated from DePaul University in Chicago where I honed my creative eye for detail with a degree in Digital Media & Communications. After years of working in Digital Media and Film, I went back to school and learned how to combine my creative skills with computer science and bring ideas alive in websites and apps using code. 
                     </p>
                 </div>
-            </div>
+            </div>,
 
             
             <div className='about-skills'>
-                <h3>I have experience with:</h3>
+                <h3>Skilled with:</h3>
                 {skillsData.map((skill, index) => {
                     return (
                         <div key={index} className='about-div'>
